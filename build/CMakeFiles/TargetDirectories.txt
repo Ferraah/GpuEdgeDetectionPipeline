@@ -1,0 +1,3 @@
+/home/dferrario/EdgeDetectionPipeline/build/CMakeFiles/EdgeDetectionPipeline.dir
+/home/dferrario/EdgeDetectionPipeline/build/CMakeFiles/edit_cache.dir
+/home/dferrario/EdgeDetectionPipeline/build/CMakeFiles/rebuild_cache.dir

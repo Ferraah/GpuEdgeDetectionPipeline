@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<link rel="canonical" href="https://ieee-dataport.org/data-formats/bmpzip" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link rel="icon" href="/themes/custom/dataport_bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" type="application/rss+xml" title=".bmp(zip)" href="https://ieee-dataport.org/taxonomy/term/7996/feed" />
+
+    <title>.bmp(zip) | IEEE DataPort</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_q0XL4qjBN-3UHKZSHdx0VSd5t78mnYn9UHRlLhjQrv0.css?delta=0&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJyNjsEOwjAMQ3-oWz-pSlczipqmSjIGfw8CwQE4cLFk-zlKhjs04TLEUNKhtru1uKJDqYUs4uZKI2VSrRIP0p12mDB-lcrf6dokU5vMr6329btnmNEKS_ux-o-rXQrCIoq4CA_p6G7zJzVNjL79iaVF2sbdnnjRbVCb6USXUMhpiHp6Dz_fH1qNX5uHCXY1B8dMhnCu2C0-dGYpW8MNIQuMiA" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_08wsmmW76kbxk9QVhV_rw5TzjMs45qrl_vw4qKyQnrw.css?delta=1&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJyNjsEOwjAMQ3-oWz-pSlczipqmSjIGfw8CwQE4cLFk-zlKhjs04TLEUNKhtru1uKJDqYUs4uZKI2VSrRIP0p12mDB-lcrf6dokU5vMr6329btnmNEKS_ux-o-rXQrCIoq4CA_p6G7zJzVNjL79iaVF2sbdnnjRbVCb6USXUMhpiHp6Dz_fH1qNX5uHCXY1B8dMhnCu2C0-dGYpW8MNIQuMiA" />
+<link rel="stylesheet" media="all" href="//use.fontawesome.com/releases/v5.13.0/css/all.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_lgWTgZEFc_2PCJ5dvP_Gz8xk58GfQhfM9O1Q9TxsZpU.css?delta=3&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJyNjsEOwjAMQ3-oWz-pSlczipqmSjIGfw8CwQE4cLFk-zlKhjs04TLEUNKhtru1uKJDqYUs4uZKI2VSrRIP0p12mDB-lcrf6dokU5vMr6329btnmNEKS_ux-o-rXQrCIoq4CA_p6G7zJzVNjL79iaVF2sbdnnjRbVCb6USXUMhpiHp6Dz_fH1qNX5uHCXY1B8dMhnCu2C0-dGYpW8MNIQuMiA" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_GA7qXI7EYb-TnvhDGUl96bXbeUB_08UoTpeyVZUppzo.css?delta=4&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJyNjsEOwjAMQ3-oWz-pSlczipqmSjIGfw8CwQE4cLFk-zlKhjs04TLEUNKhtru1uKJDqYUs4uZKI2VSrRIP0p12mDB-lcrf6dokU5vMr6329btnmNEKS_ux-o-rXQrCIoq4CA_p6G7zJzVNjL79iaVF2sbdnnjRbVCb6USXUMhpiHp6Dz_fH1qNX5uHCXY1B8dMhnCu2C0-dGYpW8MNIQuMiA" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"taxonomy\/term\/7996","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJyNj8FuwzAMQ3_IiT_JkGPW82BZhqQs7d-v6KHA0hx2IcRHQgAz3KEJ9ymGkm6tP63FigGlHrKImyvNlEm1SbzJcDpgwrgKlT9p7ZKpL-aP3kb9zBlmVGHp-Gp-8XVIQdhEETfhKQPDbT23loUx9n_W0iZ952GhkNMU9fTuRSqX-H1dhaeFVaR2JKca61POfqVvuv-FHKY241h0n9TXlwn2MAfHTIbw03BYfOnKUvaOXyhWruc","theme":"dataport_bootstrap","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/data-formats\/bmpzip":true},"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NSLFHWSR"]},"user":{"uid":0,"permissionsHash":"eb4c5bc0d54c637a7257b1655f03d45bbfb2069690c6c08a5a6cedc7f210745d"}}</script>
+<script src="/sites/default/files/js/js_JjiXiLZaSUZ3OOHy-lha4PQqd2V2v7n8FYd5eoB6u7Y.js?scope=header&amp;delta=0&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJxtjFEKwzAMQy-U1UcKCvFMhlsH24Pu9iv7KKz0R-hJQo0z2Svv04J7fQ49MEh4Y4eWZpaRjlkb3IeRqDXoI_KjY5PSkZjmWc8hocddfLq78vIqZqJcE0JyyJUXvLD_h2uZPmKl7u8JXX7wBa8GVsU"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?taz122"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?taz122"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cmp.osano.com/AzyzptTmRlqVd2LRf/ae923df5-3102-4fd5-823d-d18db6ce5c2f/osano.js"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=67e1a10b59793500196aafc8&product=sop' async='async'></script>
+	  <link rel="stylesheet" href="https://cookie-consent.ieee.org/ieee-cookie-banner.css" type="text/css"/>
+    </head>
+  <body class="layout-no-sidebars page-taxonomy-term-7996 page-vocabulary-data-formats page-view-taxonomy-term path-taxonomy">
+    <a href="#main-content" class="visually-hidden-focusable">
+      Skip to main content
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSLFHWSR"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+      <nav class="navbar" id="navbar-top">
+                <section class="container-fluid region region-top-header">
+    <nav role="navigation" aria-labelledby="block-dataport-bootstrap-ieeemenus-menu" id="block-dataport-bootstrap-ieeemenus" class="block block-menu navigation menu--ieee-menus">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-ieeemenus-menu">IEEE Menus</h2>
+  
+
+        
+                  <ul class="clearfix nav" data-component-id="bootstrap_barrio:menu">
+                    <li class="nav-item">
+                <a href="https://www.ieee.org/" target="_blank" class="nav-link nav-link-https--wwwieeeorg-">IEEE.org</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://ieeexplore.ieee.org/" target="_blank" class="nav-link nav-link-https--ieeexploreieeeorg-">IEEE Xplore Digital Library</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://standards.ieee.org/" target="_blank" class="nav-link nav-link-https--standardsieeeorg-">IEEE Standards</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://spectrum.ieee.org/" target="_blank" class="nav-link nav-link-https--spectrumieeeorg-">IEEE Spectrum</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.ieee.org/sitemap.html" target="_blank" class="nav-link nav-link-https--wwwieeeorg-sitemaphtml">More Sites</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-dataport-bootstrap-account-menu-menu" id="block-dataport-bootstrap-account-menu" class="block block-menu navigation menu--account">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-account-menu-menu">User account menu</h2>
+  
+
+        
+              <ul class="clearfix nav flex-row" data-component-id="bootstrap_barrio:menu_columns">
+                    <li class="d-none d-md-block btn btn-primary btn-sm  my-2 py-1 nav-item">
+                <a href="/subscribe" class="text-white rounded p-0 nav-link text-white rounded p-0 nav-link--subscribe" target="_blank">Subscribe</a>
+              </li>
+                <li class="d-none d-md-block cart nav-item">
+                <a href="https://www.ieee.org/cart/public/myCart/page.html?refSite=https%3A//ieee-dataport.org&amp;refSiteName=IEEE%20DataPort" target="_blank" class="nav-link nav-link-https--wwwieeeorg-cart-public-mycart-pagehtmlrefsitehttps3a--ieee-dataportorgrefsitenameieee20dataport">Cart</a>
+              </li>
+                <li class="nav-item">
+                <a href="/saml_login?idp=IEEEDataport&amp;destination=/" class="nav-link nav-link--saml-loginidpieeedataportdestination-" data-drupal-link-query="{&quot;destination&quot;:&quot;\/&quot;,&quot;idp&quot;:&quot;IEEEDataport&quot;}" data-drupal-link-system-path="saml_login">Login</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.ieee.org/profile/public/createwebaccount/showCreateAccount.html?sourceCode=dataport&amp;signinurl=https%3A//ieee-dataport.org/&amp;url=https%3A//ieee-dataport.org/" target="_blank" class="nav-link nav-link-https--wwwieeeorg-profile-public-createwebaccount-showcreateaccounthtmlsourcecodedataportsigninurlhttps3a--ieee-dataportorg-urlhttps3a--ieee-dataportorg-">Create Free Account</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+
+  </section>
+
+          </nav>
+    <div class="container-fluid">
+    <div class="row py-4 px-0 px-sm-3 mx-auto">
+      <nav class="navbar navbar-expand-lg" id="navbar-main">
+                          <a href="/" title="Home" rel="home" class="navbar-brand">
+              <img src="/themes/custom/dataport_bootstrap/logo.svg" alt="Home" class="img-fluid d-inline-block align-top" />
+            
+    </a>
+    <nav role="navigation" aria-labelledby="block-dataport-bootstrap-main-menu-menu" id="block-dataport-bootstrap-main-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-main-menu-menu">Main navigation</h2>
+  
+
+        <ul class="navbar-nav justify-content-between w-100">
+      <li class="nav-item ">
+      <a href="/datasets"  class="nav-link "  >
+        Datasets
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/submit-dataset"  class="nav-link "  >
+        Submit a Dataset
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/competitions"  class="nav-link "  >
+        Competitions
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/search"  class="nav-link "  >
+        Search
+      </a>
+    </li>
+  </ul>
+
+  </nav>
+<div id="block-dataport-bootstrap-ieeelogo" class="block-content-basic block block-block-content block-block-contentbf31f3fb-7ce3-4e1b-bf33-5b4ec9a3fff3">
+  
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><nav class="navbar"><div><a class="navbar-brand-ieee" href="https://www.ieee.org" target="_blank"><img class="partner-logo" src="https://ieee-dataport.org/themes/custom/dataport_bootstrap/images/ieee-logo.svg" alt="IEEE" width="120" height="35" loading="lazy"></a></div></nav></div>
+      
+    </div>
+  </div>
+
+
+                      <button class="navbar-toggler navbar-toggler-left" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="CollapsingNavbar">
+                <nav role="navigation" aria-labelledby="block-dataport-bootstrap-mainnavigation-menu" id="block-dataport-bootstrap-mainnavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-mainnavigation-menu">Main navigation</h2>
+  
+
+        <ul class="navbar-nav justify-content-between w-100">
+      <li class="nav-item ">
+      <a href="/datasets"  class="nav-link "  >
+        Datasets
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/submit-dataset"  class="nav-link "  >
+        Submit a Dataset
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/competitions"  class="nav-link "  >
+        Competitions
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/search"  class="nav-link "  >
+        Search
+      </a>
+    </li>
+  </ul>
+
+  </nav>
+
+
+            </div>
+                                  </nav>
+    </div>
+  </div>
+
+          <div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-dataport-bootstrap-page-title" class="block block-core block-page-title-block">
+  
+    
+      <div class="content">
+      
+			<h1 class="title">
+			.bmp(zip)
+		</h1>
+	
+
+    </div>
+  </div>
+
+
+  
+  
+  <div id="main" class="container mx-auto">
+    <div class="row row-offcanvas row-offcanvas-left clearfix">
+            <main class="main-content col px-4" id="content" role="main">
+        <section class="section">
+          <a href="#main-content" id="main-content" tabindex="-1"></a>
+          
+            <div id="block-dataport-bootstrap-content" class="block block-system block-system-main-block">
+  
+    
+      <div class="content">
+      <div class="views-element-container"><div class="view view-taxonomy-term view-id-taxonomy_term view-display-id-page_1 js-view-dom-id-faa481c0f289a648257276cdf498bd99481b1ca1394ee96e405cafcaf5f4135f">
+  
+    
+      <div class="view-header">
+      <div id="taxonomy-term-7996" class="taxonomy-term vocabulary-data-formats">
+  
+    
+  <div class="content">
+    
+  </div>
+</div>
+
+    </div>
+        <div class="view-filters">
+      
+<form class="views-exposed-form bef-exposed-form" data-drupal-selector="views-exposed-form-taxonomy-term-page-1" action="/data-formats/bmpzip" method="get" id="views-exposed-form-taxonomy-term-page-1" accept-charset="UTF-8">
+  <div class="d-flex flex-wrap">
+  
+
+
+
+
+
+  <div class="js-form-item js-form-type-textfield form-type-textfield js-form-item-title form-item-title mb-3">
+          <label for="edit-title">Dataset Title</label>
+                    <input data-drupal-selector="edit-title" type="text" id="edit-title" name="title" value="" size="30" maxlength="128" class="form-control" />
+
+                      </div>
+
+
+
+
+
+
+  <div class="js-form-item js-form-type-select form-type-select js-form-item-type form-item-type mb-3">
+          <label for="edit-type">Type</label>
+                    
+<select data-drupal-selector="edit-type" id="edit-type" name="type" class="form-select"><option value="All" selected="selected">- Any -</option><option value="document">Dataset</option><option value="open_access">Open Access</option></select>
+                      </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper mb-3" id="edit-actions"><button data-drupal-selector="edit-submit-taxonomy-term" type="submit" id="edit-submit-taxonomy-term" value="Search" class="button js-form-submit form-submit btn btn-primary">Search</button>
+</div>
+
+</div>
+
+</form>
+
+    </div>
+    
+      <div class="view-content row">
+          <div class="border-bottom views-row">
+    
+
+<article data-history-node-id="102071" class="node node--type-document node--view-mode-teaser clearfix mb-3">
+	<div>
+		<div class="row py-2 mx-auto">
+			<div class="col-12">
+				<h2>
+					<a href="/documents/bitmap-image-dataset">Bitmap Image Dataset</a>
+				</h2>
+			</div>
+		</div>
+		<div class="row mx-auto">
+			<div class="col-lg-3 pb-4 featured-image">
+								
+														<img src="/sites/default/files/styles/home/public/thumbnail_collage_1770649560425_0.png.webp?itok=xLJDYkn6" alt="Dataset image">
+							</div>
+			<div class="col">
+				
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>This dataset consists of</p><ul><li>20 images of dimension 2000x1500</li><li>20 images of dimension 4000x3000</li><li>20 images of dimension 8160x6120</li></ul><p>These images contain a range of content and have been categorized into animals, food, landscape, snow, water, and night. All the images have been captured using smartphones.</p><p>All the images have a pixel depth of 8-bits per pixel per channel. Color images are represented in three-channel RGB. Grayscale images are represented in a single channel.<br>All the images are stored in .bmp format.</p></div>
+      
+				<dl class="topinfo">
+											<dt>Categories:</dt>
+						<dd><div class="field field--name-field-tags field--type-entity-reference field--label-hidden clearfix">
+    <ul class='links field__items'>
+          <li><a href="/topic-tags/image-processing" hreflang="en">Image Processing</a></li>
+      </ul>
+</div>
+</dd>
+									</dl>
+			</div>
+		</div>
+	</div>
+</article>
+
+  </div>
+    <div class="border-bottom views-row">
+    
+
+<article data-history-node-id="11271" class="node node--type-document node--view-mode-teaser clearfix mb-3">
+	<div>
+		<div class="row py-2 mx-auto">
+			<div class="col-12">
+				<h2>
+					<a href="/documents/coal-and-gangue-infrared-images">Coal and Gangue Infrared Images</a>
+				</h2>
+			</div>
+		</div>
+		<div class="row mx-auto">
+			<div class="col-lg-3 pb-4 featured-image">
+								
+														<img src="/sites/default/files/styles/home/public/Coal-gangue-at50C.jpg.webp?itok=2EzLHUxU" alt="Dataset image">
+							</div>
+			<div class="col">
+				
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><strong>This experiment was implemented to collect infrared images&nbsp;of the coal and gangue samples at the temperature of 323.15 K.&nbsp;Additionally, it showed that distinguishing between coal and&nbsp;gangue samples is feasible, although the area, thickness, and&nbsp;surface conditions were changed at a constant temperature&nbsp;during the process of capturing the infrared images. The coal and gangue were randomly collected from the same&nbsp;mine. The random samples had different weights, shapes, areas,&nbsp;thicknesses, and surface conations.&nbsp;</strong></p></div>
+      
+				<dl class="topinfo">
+											<dt>Categories:</dt>
+						<dd><div class="field field--name-field-tags field--type-entity-reference field--label-hidden clearfix">
+    <ul class='links field__items'>
+          <li><a href="/topic-tags/artificial-intelligence" hreflang="en">Artificial Intelligence</a></li>
+          <li><a href="/topic-tags/machine-learning" hreflang="en">Machine Learning</a></li>
+          <li><a href="/topic-tags/image-processing" hreflang="en">Image Processing</a></li>
+          <li><a href="/topic-tags/computer-vision" hreflang="en">Computer Vision</a></li>
+          <li><a href="/topic-tags/geoscience-and-remote-sensing" hreflang="en">Geoscience and Remote Sensing</a></li>
+          <li><a href="/topic-tags/ecology-0" hreflang="en">Ecology</a></li>
+      </ul>
+</div>
+</dd>
+									</dl>
+			</div>
+		</div>
+	</div>
+</article>
+
+  </div>
+
+    </div>
+  
+      
+              <div class="feed-icons">
+      <a href="https://ieee-dataport.org/taxonomy/term/7996/feed" class="feed-icon">
+  Subscribe to .bmp(zip)
+</a>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+
+        </section>
+      </main>
+          </div>
+  </div>
+
+      <div class="container-fluid py-4 px-4 featured-bottom">
+        <section class="row region region-featured-bottom">
+    <div class="mailchimp-signup-subscribe-form-block block block-mailchimp-signup block-mailchimp-signup-subscribe-blocknewsletter-signup" data-drupal-selector="mailchimp-signup-subscribe-block-newsletter-signup-form" id="block-dataport-bootstrap-mailchimpsubscriptionformnewslettersignup-2">
+  
+    
+      <nav class="py-1 pl-0">
+      <a href="/">
+        <img class="logo" src="/themes/custom/dataport_bootstrap/images/dataport-logo-white.svg" alt="IEEE DataPort" width="300" height="53" loading="lazy">
+      </a>
+    </nav>
+    <div class="content">
+      <form action="/data-formats/bmpzip" method="post" id="mailchimp-signup-subscribe-block-newsletter-signup-form" accept-charset="UTF-8">
+  <div class="mailchimp-signup-subscribe-description"></div>
+  <div id="mailchimp-newsletter-3333fbe9ca-mergefields" class="mailchimp-newsletter-mergefields">
+
+
+
+
+
+  <div class="js-form-item js-form-type-email form-type-email js-form-item-mergevars-email form-item-mergevars-email mb-3">
+          <label for="edit-mergevars-email" class="js-form-required form-required">Newsletter Signup:</label>
+                    <input autocomplete="email" placeholder="Email Address *" data-drupal-selector="edit-mergevars-email" type="email" id="edit-mergevars-email" name="mergevars[EMAIL]" value="" size="25" maxlength="254" class="form-email required form-control" required="required" aria-required="true" />
+
+                      </div>
+
+
+      
+
+
+
+  <div class="js-form-item js-form-type-checkbox checkbox form-check mb-3 js-form-item-mergevars-privacy form-item-mergevars-privacy">
+                      <input type="checkbox" data-drupal-selector="edit-mergevars-privacy" id="edit-mergevars-privacy" name="mergevars[PRIVACY]" value="1" class="form-checkbox required form-check-input" required="required" aria-required="true">
+              <label  class="form-check-label" for="edit-mergevars-privacy">
+        I have read and accept the <a class="text-white text-decoration-underline" href="https://www.ieee.org/security_privacy.html" target="_blank" rel="noopener noreferrer">IEEE Privacy Policy</a>
+      </label>
+                  </div>
+</div><input autocomplete="off" data-drupal-selector="form-q49syl3gslafzdnpsi-e0oi2abyb1xx5p9bqfktivxw" type="hidden" name="form_build_id" value="form-Q49sYL3GslAFZDNpsI_e0oI2abYb1xX5P9BqFkTivXw" class="form-control" />
+<input data-drupal-selector="edit-mailchimp-signup-subscribe-block-newsletter-signup-form" type="hidden" name="form_id" value="mailchimp_signup_subscribe_block_newsletter_signup_form" class="form-control" />
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper mb-3" id="edit-actions"><button data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Sign Up" class="button js-form-submit form-submit btn btn-primary">Sign Up</button>
+</div>
+
+</form>
+
+    </div>
+    <div class="mb-3">
+      <a href="https://x.com/IEEEDataPort" target="_blank">
+        <img class="mr-2" src="/themes/custom/dataport_bootstrap/images/x-logo.svg" alt="X" width="21" height="21" loading="lazy">
+      </a>
+      <a href="https://www.youtube.com/@ieeedataport7743" target="_blank">
+        <img style="margin-left:6px;" src="/themes/custom/dataport_bootstrap/images/youtube.svg" alt="Youtube" width="32" height="22" loading="lazy">
+      </a>
+      <a href="https://www.linkedin.com/company/ieee-dataport" target="_blank">
+        <img style="margin-left:6px;" src="/themes/custom/dataport_bootstrap/images/InBug-White.png" alt="LinkedIn" width="24" height="22" loading="lazy">
+      </a>      
+    </div>
+  </div>
+<nav role="navigation" aria-labelledby="block-dataport-bootstrap-whyieeedataport-menu" id="block-dataport-bootstrap-whyieeedataport" class="block block-menu navigation menu--why-ieee-dataport">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-whyieeedataport-menu">Why IEEE DataPort?</h2>
+  
+
+        
+                  <ul class="clearfix nav" data-component-id="bootstrap_barrio:menu">
+                    <li class="nav-item">
+                <a href="/why-ieee-dataport" class="nav-link nav-link--why-ieee-dataport">Why IEEE DataPort?</a>
+              </li>
+                <li class="nav-item">
+                <a href="/datasets" class="nav-link nav-link--datasets">Access Datasets</a>
+              </li>
+                <li class="nav-item">
+                <a href="/submit-dataset" class="nav-link nav-link--submit-dataset">Submit a Dataset</a>
+              </li>
+                <li class="nav-item">
+                <a href="/subscribe" class="nav-link nav-link--subscribe">Subscribe</a>
+              </li>
+                <li class="nav-item">
+                <a href="/contact-us" class="nav-link nav-link--contact-us">Contact Us</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-dataport-bootstrap-ieeedataportresources-menu" id="block-dataport-bootstrap-ieeedataportresources" class="block block-menu navigation menu--ieee-dataport-resources">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-ieeedataportresources-menu">IEEE DataPort Resources</h2>
+  
+
+        
+                  <ul class="clearfix nav" data-component-id="bootstrap_barrio:menu">
+                    <li class="nav-item">
+                <a href="/news" class="nav-link nav-link--news">IEEE DataPort Resources</a>
+              </li>
+                <li class="nav-item">
+                <a href="/search" class="nav-link nav-link--search" data-drupal-link-system-path="search">Dataset Search</a>
+              </li>
+                <li class="nav-item">
+                <a href="/news" class="nav-link nav-link--news">Newsletters and Insights</a>
+              </li>
+                <li class="nav-item">
+                <a href="/use-cases-and-additional-resources" class="nav-link nav-link--use-cases-and-additional-resources">Use Cases</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://supportcenter.ieee.org/" class="nav-link nav-link-https--supportcenterieeeorg-">IEEE Support Center</a>
+              </li>
+                <li class="nav-item">
+                <a href="/help" class="nav-link nav-link--help">Help &amp; FAQs</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-dataport-bootstrap-businesssolutions-menu" id="block-dataport-bootstrap-businesssolutions" class="block block-menu navigation menu--business-solutions">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-businesssolutions-menu">Business Solutions</h2>
+  
+
+        
+                  <ul class="clearfix nav" data-component-id="bootstrap_barrio:menu">
+                    <li class="nav-item">
+                <a href="/institutional-subscriptions" class="nav-link nav-link--institutional-subscriptions">Business Solutions</a>
+              </li>
+                <li class="nav-item">
+                <a href="/institutional-subscriptions" class="nav-link nav-link--institutional-subscriptions">Institutional Subscriptions</a>
+              </li>
+                <li class="nav-item">
+                <a href="/corporate-programs" class="nav-link nav-link--corporate-programs">Corporate Partnerships</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://ieee-dataport.org/sites/default/files/2025-09/IEEE_DataPort_Media_Kit_2025_Rev2.pdf" class="nav-link nav-link-https--ieee-dataportorg-sites-default-files-2025-09-ieee-dataport-media-kit-2025-rev2pdf">Advertising/Media Kit</a>
+              </li>
+                <li class="nav-item">
+                <a href="/ieee-dataport-data-competition-sponsorship-opportunities" class="nav-link nav-link--ieee-dataport-data-competition-sponsorship-opportunities" data-drupal-link-system-path="node/15019">Data Competition Sponsorship</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+
+  </section>
+
+    </div>
+  
+      <footer class="site-footer py-3">
+        <section class="row region region-footer mx-3">
+    <div id="block-dataport-bootstrap-footerlinks" class="block-content-basic block block-block-content block-block-contentb4865bc9-dce6-425e-977d-076a76a6da91">
+  
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="row py-2 mx-auto justify-content-center"><p class="text-center"><a href="http://www.ieee.org/index.html" target="_blank">Home</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/sitemap.html" target="_blank">Sitemap/More Sites</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/about/contact_center/index.html" target="_blank">Contact</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/accessibility_statement.html" target="_blank">Accessibility</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/p9-26.html" target="_blank">Nondiscrimination Policy</a> &nbsp;|&nbsp; <a href="http://ieee-ethics-reporting.org/" target="_blank">IEEE Ethics Reporting</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/security_privacy.html" target="_blank">IEEE Privacy Policy</a> &nbsp;|&nbsp; <a href="https://www.ieee.org/about/help/site-terms-conditions.html" target="_blank">Terms &amp; Disclosures</a></p><p class="text-center">© Copyright&nbsp;<script type="text/javascript">document.write((new Date()).getFullYear());</script> IEEE - All rights reserved. A public charity, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.<br>&nbsp;</p></div></div>
+      
+    </div>
+  </div>
+
+  </section>
+
+    </footer>
+  
+  </div>
+
+    
+    <script src="/sites/default/files/js/js_37GQck9S8g7gZ8Gp87j05XpvoB8XFjrCZEiy8qb6mRg.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJxtjFEKwzAMQy-U1UcKCvFMhlsH24Pu9iv7KKz0R-hJQo0z2Svv04J7fQ49MEh4Y4eWZpaRjlkb3IeRqDXoI_KjY5PSkZjmWc8hocddfLq78vIqZqJcE0JyyJUXvLD_h2uZPmKl7u8JXX7wBa8GVsU"></script>
+<script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" async crossorigin="anonymous"></script>
+<script src="/sites/default/files/js/js_Z4OPzEXwuGpBYbvLkFbhHuT4y-HKZ1L_5w11oqyjH1Y.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJxtjFEKwzAMQy-U1UcKCvFMhlsH24Pu9iv7KKz0R-hJQo0z2Svv04J7fQ49MEh4Y4eWZpaRjlkb3IeRqDXoI_KjY5PSkZjmWc8hocddfLq78vIqZqJcE0JyyJUXvLD_h2uZPmKl7u8JXX7wBa8GVsU"></script>
+
+  </body>
+</html>
