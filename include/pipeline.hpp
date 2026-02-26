@@ -9,7 +9,7 @@ struct PipelineSlot {
     uint8_t* h_input_rgb;  // pinned, RGB for overlay
     uint8_t* h_output;     // pinned, final result
     size_t width, height;
-    
+
     // Device buffers
     uint8_t* d_input;
     uint8_t* d_gaussian;   // output of stage 1

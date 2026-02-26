@@ -59,19 +59,6 @@ int main() {
     launchBinarizeImage(d_output, d_output, width, height, threshold);
     ck(cudaMemcpy(h_output, d_output, width * height * sizeof(uint8_t), cudaMemcpyDeviceToHost));
 
-
-    // Print old image and new image data for verification
-    std::cout << "Original Image Data (first 10 pixels): ";
-    for (int i = 0; i < 10 ; i++) {
-        std::cout << static_cast<int>(data[i]) << " ";
-    }
-    std::cout << std::endl; 
-    std::cout << "Processed Image Data (first 10 pixels): ";
-    for (int i = 0; i < 10 * channels; i++) {
-        std::cout << static_cast<int>(h_output[i]) << " ";
-    }
-    std::cout << std::endl;
-    
     uint8_t* bgrData = new uint8_t[width * height * 3];
     mono_to_bgr(h_output, bgrData, width * height);
     overlap_images(data_bgr, bgrData, bgrData, width, height, 3);
