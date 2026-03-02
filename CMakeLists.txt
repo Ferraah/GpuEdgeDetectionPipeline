@@ -2,11 +2,15 @@ cmake_minimum_required(VERSION 3.10)
 
 project(EdgeDetectionPipeline LANGUAGES CXX CUDA C)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Default to Debug builds unless the user explicitly sets a build type.
+if(NOT CMAKE_BUILD_TYPE)
+	set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
+endif()
+
 include_directories(include)
-set(CMAKE_CUDA_COMPILER /usr/bin/nvcc)
 enable_language(CUDA)
 set(CMAKE_CUDA_STANDARD 11)
 

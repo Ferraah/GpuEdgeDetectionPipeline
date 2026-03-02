@@ -5,6 +5,7 @@
 
 #include <cuda_runtime.h>
 #include <cstdint>
+#include <iostream>
 #include "kernel.cuh"
 
 using namespace std;
@@ -69,6 +70,24 @@ void launchLaplacianFilter(uint8_t* d_inputImage, uint8_t* d_outputImage,
     dim3 gridSize((width + blockSize.x - 1) / blockSize.x, (height + blockSize.y - 1) / blockSize.y);
     applyKernel<<<gridSize, blockSize>>>(d_inputImage, d_outputImage, width, height, d_kernel, kernelSize);
     cudaDeviceSynchronize();
+}
+
+void launchConvolutionAsync(uint8_t* d_inputImage, uint8_t* d_outputImage, 
+    int width, int height, float* d_kernel, int kernelSize, cudaStream_t stream) {
+    dim3 blockSize(16, 16);
+    dim3 gridSize((width + blockSize.x - 1) / blockSize.x, (height + blockSize.y - 1) / blockSize.y);
+    applyKernel<<<gridSize, blockSize, 0, stream>>>(d_inputImage, d_outputImage, width, height, d_kernel, kernelSize);
+    cudaError_t launchErr = cudaGetLastError();
+    if (launchErr != cudaSuccess) {
+        std::cerr << "Kernel launch failed: " << cudaGetErrorString(launchErr) << std::endl;
+    }
+}
+
+void launchBinarizeImageAsync(uint8_t* d_inputImage, uint8_t* d_outputImage, int width, int height, uint8_t threshold, cudaStream_t stream) {
+    dim3 blockSize(16, 16);
+    dim3 gridSize((width + blockSize.x - 1) / blockSize.x, (height + blockSize.y - 1) / blockSize.y);
+    binarizeImage<<<gridSize, blockSize, 0, stream>>>(d_inputImage, d_outputImage, width, height, threshold);
+
 }
 
 #endif // KERNEL_CUH

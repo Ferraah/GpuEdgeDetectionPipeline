@@ -19,4 +19,9 @@ void launchLaplacianFilter(uint8_t* d_inputImage, uint8_t* d_outputImage,
 
 void launchBinarizeImage(uint8_t* d_inputImage, uint8_t* d_outputImage, int width, int height, uint8_t threshold);  
 
+
+void launchConvolutionAsync(uint8_t* d_inputImage, uint8_t* d_outputImage, 
+    int width, int height, float* d_kernel, int kernelSize, cudaStream_t stream);
+
+void launchBinarizeImageAsync(uint8_t* d_inputImage, uint8_t* d_outputImage, int width, int height, uint8_t threshold, cudaStream_t stream);
 #endif // KERNEL_CUH

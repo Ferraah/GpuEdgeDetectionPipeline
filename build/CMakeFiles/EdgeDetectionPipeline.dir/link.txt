@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/EdgeDetectionPipeline.dir/src/bmpread.c.o CMakeFiles/EdgeDetectionPipeline.dir/src/kernel.cu.o CMakeFiles/EdgeDetectionPipeline.dir/src/main.cpp.o -o EdgeDetectionPipeline   -L/usr/lib/x86_64-linux-gnu/stubs  -L/usr/lib/gcc/x86_64-linux-gnu/12  -lcuda -lcudadevrt -lcudart_static -lrt -lpthread -ldl 
