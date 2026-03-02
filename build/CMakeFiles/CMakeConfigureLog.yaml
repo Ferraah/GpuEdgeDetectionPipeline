@@ -81,7 +81,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 3/2/2026 9:55:22 PM.
+      Build started 3/2/2026 11:20:48 PM.
       
       Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -110,7 +110,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.72
+      Time Elapsed 00:00:00.92
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -789,7 +789,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 3/2/2026 9:55:25 PM.
+      Build started 3/2/2026 11:20:50 PM.
       
       Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -805,7 +805,7 @@ events:
       CudaBuildCore:
         Compiling CUDA source file CMakeCUDACompilerId.cu...
         Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug".
-        cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmpaac41a4e0ba640a68ecb849994258d05.cmd"
+        cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmp85b3007e979948ae8076dfcfda5e2ea6.cmd"
         "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu"
         
         C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" 
@@ -828,23 +828,23 @@ events:
         #$ CUDAFE_FLAGS=--sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"
         #$ PTXAS_FLAGS=
         CMakeCUDACompilerId.cu
-        #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-8.res: [-D__CUDA_ARCH_LIST__=750 -nologo -E -TP -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
-        #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-8.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+        #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-8.res: [-D__CUDA_ARCH_LIST__=750 -nologo -E -TP -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
+        #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-8.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
         CMakeCUDACompilerId.cu
-        #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-8.res
-        #$ cudafe++ --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
-        #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-10.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -E -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
-        #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-10.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-9_CMakeCUDACompilerId.cpp1.ii" 
+        #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-8.res
+        #$ cudafe++ --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+        #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-10.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -E -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
+        #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-10.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-9_CMakeCUDACompilerId.cpp1.ii" 
         CMakeCUDACompilerId.cu
-        #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-10.res
-        #$ ""%CICC_PATH%\\cicc" --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_75 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00007fa4_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-9_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.ptx""
-        #$ ptxas -arch=sm_75 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-11_CMakeCUDACompilerId.sm_75.cubin" 
-        #$ fatbinary -64 --ident="C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-11_CMakeCUDACompilerId.sm_75.cubin" "--image3=kind=ptx,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-4_CMakeCUDACompilerId.fatbin.c" 
-        #$ erase C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-4_CMakeCUDACompilerId.fatbin
-        #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-12.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"     -Zi "C:\\Users\\DFERRA~1\\AppData\\Local\\Temp\\tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" ]
-        #$ cl.exe @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-12.res" -Fo"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" 
-        tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.cpp
-        #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-12.res
+        #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-10.res
+        #$ ""%CICC_PATH%\\cicc" --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_75 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00006bfc_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-9_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.ptx""
+        #$ ptxas -arch=sm_75 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-11_CMakeCUDACompilerId.sm_75.cubin" 
+        #$ fatbinary -64 --ident="C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-11_CMakeCUDACompilerId.sm_75.cubin" "--image3=kind=ptx,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-4_CMakeCUDACompilerId.fatbin.c" 
+        #$ erase C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-4_CMakeCUDACompilerId.fatbin
+        #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-12.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"     -Zi "C:\\Users\\DFERRA~1\\AppData\\Local\\Temp\\tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" ]
+        #$ cl.exe @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-12.res" -Fo"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" 
+        tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.cpp
+        #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-12.res
       Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (CudaBuildCore target(s)).
       Link:
         C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj
@@ -869,7 +869,7 @@ events:
           1 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:06.49
+      Time Elapsed 00:00:03.48
       
       
       Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exe"
@@ -1069,7 +1069,7 @@ events:
         found 'INCLUDES=' string: ["-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"  ]
         found 'SYSTEM_INCLUDES=' string: []
         considering line: [MSBuild version 17.14.40+3e7442088 for .NET Framework]
-        considering line: [Build started 3/2/2026 9:55:25 PM.]
+        considering line: [Build started 3/2/2026 11:20:50 PM.]
         considering line: [Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" on node 1 (default targets).]
         considering line: [PrepareForBuild:]
         considering line: [  Creating directory "Debug\\".]
@@ -1084,28 +1084,28 @@ events:
         considering line: [CudaBuildCore:]
         considering line: [  Compiling CUDA source file CMakeCUDACompilerId.cu...]
         considering line: [  Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug".]
-        considering line: [  cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmpaac41a4e0ba640a68ecb849994258d05.cmd"]
+        considering line: [  cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmp85b3007e979948ae8076dfcfda5e2ea6.cmd"]
         considering line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu"]
         considering line: [  ]
         considering line: [  C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
         considering line: [                                      CMakeCUDACompilerId.cu]
-        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-8.res: [-D__CUDA_ARCH_LIST__=750 -nologo -E -TP -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
-        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-8.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-8.res: [-D__CUDA_ARCH_LIST__=750 -nologo -E -TP -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-8.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
         considering line: [  CMakeCUDACompilerId.cu]
-        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-8.res]
-        considering line: [  #$ cudafe++ --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
-        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-10.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -E -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
-        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-10.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-9_CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-8.res]
+        considering line: [  #$ cudafe++ --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-10.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -E -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-10.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-9_CMakeCUDACompilerId.cpp1.ii" ]
         considering line: [  CMakeCUDACompilerId.cu]
-        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-10.res]
-        considering line: [  #$ ""%CICC_PATH%\\cicc" --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_75 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00007fa4_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-9_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.ptx""]
-        considering line: [  #$ ptxas -arch=sm_75 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-11_CMakeCUDACompilerId.sm_75.cubin" ]
-        considering line: [  #$ fatbinary -64 --ident="C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-11_CMakeCUDACompilerId.sm_75.cubin" "--image3=kind=ptx,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-4_CMakeCUDACompilerId.fatbin.c" ]
-        considering line: [  #$ erase C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-4_CMakeCUDACompilerId.fatbin]
-        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-12.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"     -Zi "C:\\Users\\DFERRA~1\\AppData\\Local\\Temp\\tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" ]]
-        considering line: [  #$ cl.exe @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-12.res" -Fo"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" ]
-        considering line: [  tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.cpp]
-        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-12.res]
+        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-10.res]
+        considering line: [  #$ ""%CICC_PATH%\\cicc" --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_75 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00006bfc_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-9_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.ptx""]
+        considering line: [  #$ ptxas -arch=sm_75 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-11_CMakeCUDACompilerId.sm_75.cubin" ]
+        considering line: [  #$ fatbinary -64 --ident="C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-11_CMakeCUDACompilerId.sm_75.cubin" "--image3=kind=ptx,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-4_CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [  #$ erase C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-4_CMakeCUDACompilerId.fatbin]
+        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-12.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"     -Zi "C:\\Users\\DFERRA~1\\AppData\\Local\\Temp\\tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" ]]
+        considering line: [  #$ cl.exe @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-12.res" -Fo"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" ]
+        considering line: [  tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.cpp]
+        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-12.res]
         considering line: [Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (CudaBuildCore target(s)).]
         considering line: [Link:]
         considering line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj]
@@ -1129,7 +1129,7 @@ events:
         considering line: [ use /NODEFAULTLIB:library [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]]
         considering line: [    1 Warning(s)]
         considering line: [    0 Error(s)]
-        considering line: [Time Elapsed 00:00:06.49]
+        considering line: [Time Elapsed 00:00:03.48]
         considering line: []
       
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
@@ -1173,7 +1173,7 @@ events:
         found 'INCLUDES=' string: ["-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"  ]
         found 'SYSTEM_INCLUDES=' string: []
         considering line: [MSBuild version 17.14.40+3e7442088 for .NET Framework]
-        considering line: [Build started 3/2/2026 9:55:25 PM.]
+        considering line: [Build started 3/2/2026 11:20:50 PM.]
         considering line: [Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" on node 1 (default targets).]
         considering line: [PrepareForBuild:]
         considering line: [  Creating directory "Debug\\".]
@@ -1188,28 +1188,28 @@ events:
         considering line: [CudaBuildCore:]
         considering line: [  Compiling CUDA source file CMakeCUDACompilerId.cu...]
         considering line: [  Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug".]
-        considering line: [  cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmpaac41a4e0ba640a68ecb849994258d05.cmd"]
+        considering line: [  cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmp85b3007e979948ae8076dfcfda5e2ea6.cmd"]
         considering line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu"]
         considering line: [  ]
         considering line: [  C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
         considering line: [                                      CMakeCUDACompilerId.cu]
-        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-8.res: [-D__CUDA_ARCH_LIST__=750 -nologo -E -TP -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
-        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-8.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-8.res: [-D__CUDA_ARCH_LIST__=750 -nologo -E -TP -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-8.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
         considering line: [  CMakeCUDACompilerId.cu]
-        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-8.res]
-        considering line: [  #$ cudafe++ --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
-        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-10.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -E -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
-        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-10.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-9_CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-8.res]
+        considering line: [  #$ cudafe++ --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-10.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -E -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=1 -D__CUDACC_VER_BUILD__=115 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=1 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-10.res" > "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-9_CMakeCUDACompilerId.cpp1.ii" ]
         considering line: [  CMakeCUDACompilerId.cu]
-        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-10.res]
-        considering line: [  #$ ""%CICC_PATH%\\cicc" --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_75 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00007fa4_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-9_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.ptx""]
-        considering line: [  #$ ptxas -arch=sm_75 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-11_CMakeCUDACompilerId.sm_75.cubin" ]
-        considering line: [  #$ fatbinary -64 --ident="C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-11_CMakeCUDACompilerId.sm_75.cubin" "--image3=kind=ptx,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-4_CMakeCUDACompilerId.fatbin.c" ]
-        considering line: [  #$ erase C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00007fa4_00000000-4_CMakeCUDACompilerId.fatbin]
-        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-12.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"     -Zi "C:\\Users\\DFERRA~1\\AppData\\Local\\Temp\\tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" ]]
-        considering line: [  #$ cl.exe @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-12.res" -Fo"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" ]
-        considering line: [  tmpxft_00007fa4_00000000-7_CMakeCUDACompilerId.cudafe1.cpp]
-        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00007fa4_00000000-12.res]
+        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-10.res]
+        considering line: [  #$ ""%CICC_PATH%\\cicc" --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_75 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00006bfc_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --module_id_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-9_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.ptx""]
+        considering line: [  #$ ptxas -arch=sm_75 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-11_CMakeCUDACompilerId.sm_75.cubin" ]
+        considering line: [  #$ fatbinary -64 --ident="C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-11_CMakeCUDACompilerId.sm_75.cubin" "--image3=kind=ptx,sm=75,file=C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-4_CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [  #$ erase C:/Users/DFERRA~1/AppData/Local/Temp/tmpxft_00006bfc_00000000-4_CMakeCUDACompilerId.fatbin]
+        considering line: [  #$ resource file C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-12.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.1/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin/../include/cccl"     -Zi "C:\\Users\\DFERRA~1\\AppData\\Local\\Temp\\tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" ]]
+        considering line: [  #$ cl.exe @"C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-12.res" -Fo"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/4.2.3/CompilerIdCUDA/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" ]
+        considering line: [  tmpxft_00006bfc_00000000-7_CMakeCUDACompilerId.cudafe1.cpp]
+        considering line: [  #$ erase C:\\Users\\DFERRA~1\\AppData\\Local\\Temp/tmpxft_00006bfc_00000000-12.res]
         considering line: [Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (CudaBuildCore target(s)).]
         considering line: [Link:]
         considering line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj]
@@ -1233,7 +1233,7 @@ events:
         considering line: [ use /NODEFAULTLIB:library [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]]
         considering line: [    1 Warning(s)]
         considering line: [    0 Error(s)]
-        considering line: [Time Elapsed 00:00:06.49]
+        considering line: [Time Elapsed 00:00:03.48]
         considering line: []
       
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
@@ -1337,7 +1337,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 3/2/2026 9:55:33 PM.
+      Build started 3/2/2026 11:20:54 PM.
       
       Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\4.2.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -1366,7 +1366,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.67
+      Time Elapsed 00:00:00.94
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -1780,8 +1780,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-3tbf82"
-      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-3tbf82"
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-xuz962"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-xuz962"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1791,39 +1791,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-3tbf82'
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-xuz962'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_59ad1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5ace7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 3/2/2026 9:55:37 PM.
+        Build started 3/2/2026 11:20:56 PM.
         
-        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3tbf82\\cmTC_59ad1.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xuz962\\cmTC_5ace7.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3tbf82\\Debug\\".
-          Creating directory "cmTC_59ad1.dir\\Debug\\cmTC_59ad1.tlog\\".
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xuz962\\Debug\\".
+          Creating directory "cmTC_5ace7.dir\\Debug\\cmTC_5ace7.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_59ad1.dir\\Debug\\cmTC_59ad1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_59ad1.dir\\Debug\\cmTC_59ad1.tlog\\unsuccessfulbuild".
+          Creating "cmTC_5ace7.dir\\Debug\\cmTC_5ace7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5ace7.dir\\Debug\\cmTC_5ace7.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_59ad1.dir\\Debug\\\\" /Fd"cmTC_59ad1.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_5ace7.dir\\Debug\\\\" /Fd"cmTC_5ace7.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_59ad1.dir\\Debug\\\\" /Fd"cmTC_59ad1.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_5ace7.dir\\Debug\\\\" /Fd"cmTC_5ace7.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3tbf82\\Debug\\cmTC_59ad1.exe" /INCREMENTAL /ILK:"cmTC_59ad1.dir\\Debug\\cmTC_59ad1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-3tbf82/Debug/cmTC_59ad1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-3tbf82/Debug/cmTC_59ad1.lib" /MACHINE:X64  /machine:x64 cmTC_59ad1.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_59ad1.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3tbf82\\Debug\\cmTC_59ad1.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xuz962\\Debug\\cmTC_5ace7.exe" /INCREMENTAL /ILK:"cmTC_5ace7.dir\\Debug\\cmTC_5ace7.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-xuz962/Debug/cmTC_5ace7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-xuz962/Debug/cmTC_5ace7.lib" /MACHINE:X64  /machine:x64 cmTC_5ace7.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_5ace7.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xuz962\\Debug\\cmTC_5ace7.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_59ad1.dir\\Debug\\cmTC_59ad1.tlog\\unsuccessfulbuild".
-          Touching "cmTC_59ad1.dir\\Debug\\cmTC_59ad1.tlog\\cmTC_59ad1.lastbuildstate".
-        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3tbf82\\cmTC_59ad1.vcxproj" (default targets).
+          Deleting file "cmTC_5ace7.dir\\Debug\\cmTC_5ace7.tlog\\unsuccessfulbuild".
+          Touching "cmTC_5ace7.dir\\Debug\\cmTC_5ace7.tlog\\cmTC_5ace7.lastbuildstate".
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xuz962\\cmTC_5ace7.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.60
+        Time Elapsed 00:00:00.90
         
       exitCode: 0
   -
@@ -1863,8 +1863,8 @@ events:
     checks:
       - "Detecting CUDA compiler ABI info"
     directories:
-      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w"
-      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w"
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5"
     cmakeVariables:
       CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
       CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
@@ -1874,69 +1874,69 @@ events:
       variable: "CMAKE_CUDA_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w'
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_043b5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2771a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 3/2/2026 9:55:40 PM.
+        Build started 3/2/2026 11:20:58 PM.
         
-        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\Debug\\".
-          Creating directory "cmTC_043b5.dir\\Debug\\cmTC_043b5.tlog\\".
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\Debug\\".
+          Creating directory "cmTC_2771a.dir\\Debug\\cmTC_2771a.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_043b5.dir\\Debug\\cmTC_043b5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_043b5.dir\\Debug\\cmTC_043b5.tlog\\unsuccessfulbuild".
+          Creating "cmTC_2771a.dir\\Debug\\cmTC_2771a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2771a.dir\\Debug\\cmTC_2771a.tlog\\unsuccessfulbuild".
         AddCudaCompileDeps:
           C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=1 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" /I. /FIcuda_runtime.h /c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu" 
-        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (1) is building "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (1) is building "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
         CudaBuildCore:
           Compiling CUDA source file ..\\..\\..\\..\\..\\..\\..\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu...
-          cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmpdb7b1398b9c649ecb59b5be95a03e1c4.cmd"
-          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_043b5\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_043b5.dir\\Debug\\vc143.pdb" -o cmTC_043b5.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu"
+          cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmp49372f70c1f34a79bb03b87d587b08e7.cmd"
+          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_2771a\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_2771a.dir\\Debug\\vc143.pdb" -o cmTC_2771a.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu"
           
-          C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_043b5\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_043b5.dir\\Debug\\vc143.pdb" -o cmTC_043b5.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu" 
-        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
+          C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_2771a\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_2771a.dir\\Debug\\vc143.pdb" -o cmTC_2771a.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu" 
+        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
           CMakeCUDACompilerABI.cu
-        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
+        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
           CMakeCUDACompilerABI.cu
           CMakeCUDACompilerABI.cu
-        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
-          tmpxft_000063c4_00000000-7_CMakeCUDACompilerABI.cudafe1.cpp
-        C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
-        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (CudaBuildCore target(s)).
+        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
+          tmpxft_0000949c_00000000-7_CMakeCUDACompilerABI.cudafe1.cpp
+        C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (CudaBuildCore target(s)).
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\Debug\\cmTC_043b5.exe" /INCREMENTAL /ILK:"cmTC_043b5.dir\\Debug\\cmTC_043b5.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w/Debug/cmTC_043b5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w/Debug/cmTC_043b5.lib" /MACHINE:X64  /machine:x64 -v cmTC_043b5.dir\\Debug\\CMakeCUDACompilerABI.obj
-        LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
-             Creating library C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w/Debug/cmTC_043b5.lib and object C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w/Debug/cmTC_043b5.exp
-        LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
-          cmTC_043b5.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\Debug\\cmTC_043b5.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\Debug\\cmTC_2771a.exe" /INCREMENTAL /ILK:"cmTC_2771a.dir\\Debug\\cmTC_2771a.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5/Debug/cmTC_2771a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5/Debug/cmTC_2771a.lib" /MACHINE:X64  /machine:x64 -v cmTC_2771a.dir\\Debug\\CMakeCUDACompilerABI.obj
+        LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
+             Creating library C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5/Debug/cmTC_2771a.lib and object C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5/Debug/cmTC_2771a.exp
+        LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
+          cmTC_2771a.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\Debug\\cmTC_2771a.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_043b5.dir\\Debug\\cmTC_043b5.tlog\\unsuccessfulbuild".
-          Touching "cmTC_043b5.dir\\Debug\\cmTC_043b5.tlog\\cmTC_043b5.lastbuildstate".
-        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (default targets).
+          Deleting file "cmTC_2771a.dir\\Debug\\cmTC_2771a.tlog\\unsuccessfulbuild".
+          Touching "cmTC_2771a.dir\\Debug\\cmTC_2771a.tlog\\cmTC_2771a.lastbuildstate".
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (default targets).
         
         Build succeeded.
         
-        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (default target) (1) ->
-        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (CudaBuildCore target) (1:2) ->
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (default target) (1) ->
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (CudaBuildCore target) (1:2) ->
         (CudaBuildCore target) -> 
-          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
-          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
-          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
-          C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
+          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
+          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
+          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
+          C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
         
         
-        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (default target) (1) ->
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
-          LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]
+          LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
+          LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]
         
             6 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:06.08
+        Time Elapsed 00:00:03.45
         
       exitCode: 0
   -
@@ -1960,73 +1960,73 @@ events:
       Parsed CUDA implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w']
+        ignore line: [Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_043b5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n]
+        ignore line: [Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2771a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n]
         ignore line: [MSBuild version 17.14.40+3e7442088 for .NET Framework]
-        ignore line: [Build started 3/2/2026 9:55:40 PM.]
+        ignore line: [Build started 3/2/2026 11:20:58 PM.]
         ignore line: []
-        ignore line: [Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" on node 1 (default targets).]
+        ignore line: [Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" on node 1 (default targets).]
         ignore line: [PrepareForBuild:]
         ignore line: [  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.]
-        ignore line: [  Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\Debug\\".]
-        ignore line: [  Creating directory "cmTC_043b5.dir\\Debug\\cmTC_043b5.tlog\\".]
+        ignore line: [  Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\Debug\\".]
+        ignore line: [  Creating directory "cmTC_2771a.dir\\Debug\\cmTC_2771a.tlog\\".]
         ignore line: [InitializeBuildStatus:]
-        ignore line: [  Creating "cmTC_043b5.dir\\Debug\\cmTC_043b5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.]
-        ignore line: [  Touching "cmTC_043b5.dir\\Debug\\cmTC_043b5.tlog\\unsuccessfulbuild".]
+        ignore line: [  Creating "cmTC_2771a.dir\\Debug\\cmTC_2771a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.]
+        ignore line: [  Touching "cmTC_2771a.dir\\Debug\\cmTC_2771a.tlog\\unsuccessfulbuild".]
         ignore line: [AddCudaCompileDeps:]
         ignore line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=1 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" /I. /FIcuda_runtime.h /c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu" ]
-        ignore line: [Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (1) is building "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).]
+        ignore line: [Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (1) is building "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).]
         ignore line: [CudaBuildCore:]
         ignore line: [  Compiling CUDA source file ..\\..\\..\\..\\..\\..\\..\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu...]
-        ignore line: [  cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmpdb7b1398b9c649ecb59b5be95a03e1c4.cmd"]
-        ignore line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_043b5\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_043b5.dir\\Debug\\vc143.pdb" -o cmTC_043b5.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu"]
+        ignore line: [  cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmp49372f70c1f34a79bb03b87d587b08e7.cmd"]
+        ignore line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_2771a\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_2771a.dir\\Debug\\vc143.pdb" -o cmTC_2771a.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu"]
         ignore line: [  ]
-        ignore line: [  C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_043b5\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_043b5.dir\\Debug\\vc143.pdb" -o cmTC_043b5.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu" ]
-        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
+        ignore line: [  C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_2771a\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_2771a.dir\\Debug\\vc143.pdb" -o cmTC_2771a.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCUDACompilerABI.cu" ]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
         ignore line: [  CMakeCUDACompilerABI.cu]
-        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
         ignore line: [  CMakeCUDACompilerABI.cu]
         ignore line: [  CMakeCUDACompilerABI.cu]
-        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
-        ignore line: [  tmpxft_000063c4_00000000-7_CMakeCUDACompilerABI.cudafe1.cpp]
-        ignore line: [C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
-        ignore line: [Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (CudaBuildCore target(s)).]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
+        ignore line: [  tmpxft_0000949c_00000000-7_CMakeCUDACompilerABI.cudafe1.cpp]
+        ignore line: [C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
+        ignore line: [Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (CudaBuildCore target(s)).]
         ignore line: [Link:]
-        ignore line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\Debug\\cmTC_043b5.exe" /INCREMENTAL /ILK:"cmTC_043b5.dir\\Debug\\cmTC_043b5.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w/Debug/cmTC_043b5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w/Debug/cmTC_043b5.lib" /MACHINE:X64  /machine:x64 -v cmTC_043b5.dir\\Debug\\CMakeCUDACompilerABI.obj]
+        ignore line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\Debug\\cmTC_2771a.exe" /INCREMENTAL /ILK:"cmTC_2771a.dir\\Debug\\cmTC_2771a.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5/Debug/cmTC_2771a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5/Debug/cmTC_2771a.lib" /MACHINE:X64  /machine:x64 -v cmTC_2771a.dir\\Debug\\CMakeCUDACompilerABI.obj]
         ignore line: [LINK : warning LNK4044: unrecognized option '/v']
-        ignore line: [ ignored [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
-        ignore line: [     Creating library C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w/Debug/cmTC_043b5.lib and object C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-t4w00w/Debug/cmTC_043b5.exp]
+        ignore line: [ ignored [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
+        ignore line: [     Creating library C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5/Debug/cmTC_2771a.lib and object C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-s9j0a5/Debug/cmTC_2771a.exp]
         ignore line: [LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
-        ignore line: [ use /NODEFAULTLIB:library [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
-        ignore line: [  cmTC_043b5.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\Debug\\cmTC_043b5.exe]
+        ignore line: [ use /NODEFAULTLIB:library [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
+        ignore line: [  cmTC_2771a.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\Debug\\cmTC_2771a.exe]
         ignore line: [FinalizeBuildStatus:]
-        ignore line: [  Deleting file "cmTC_043b5.dir\\Debug\\cmTC_043b5.tlog\\unsuccessfulbuild".]
-        ignore line: [  Touching "cmTC_043b5.dir\\Debug\\cmTC_043b5.tlog\\cmTC_043b5.lastbuildstate".]
-        ignore line: [Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (default targets).]
+        ignore line: [  Deleting file "cmTC_2771a.dir\\Debug\\cmTC_2771a.tlog\\unsuccessfulbuild".]
+        ignore line: [  Touching "cmTC_2771a.dir\\Debug\\cmTC_2771a.tlog\\cmTC_2771a.lastbuildstate".]
+        ignore line: [Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (default targets).]
         ignore line: []
         ignore line: [Build succeeded.]
         ignore line: []
-        ignore line: ["C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (default target) (1) ->]
-        ignore line: ["C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (CudaBuildCore target) (1:2) ->]
+        ignore line: ["C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (default target) (1) ->]
+        ignore line: ["C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (CudaBuildCore target) (1:2) ->]
         ignore line: [(CudaBuildCore target) -> ]
-        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
-        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
-        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
-        ignore line: [  C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
+        ignore line: [  C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
         ignore line: []
         ignore line: []
-        ignore line: ["C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj" (default target) (1) ->]
+        ignore line: ["C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj" (default target) (1) ->]
         ignore line: [(Link target) -> ]
         ignore line: [  LINK : warning LNK4044: unrecognized option '/v']
-        ignore line: [ ignored [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
+        ignore line: [ ignored [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
         ignore line: [  LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
-        ignore line: [ use /NODEFAULTLIB:library [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t4w00w\\cmTC_043b5.vcxproj]]
+        ignore line: [ use /NODEFAULTLIB:library [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s9j0a5\\cmTC_2771a.vcxproj]]
         ignore line: []
         ignore line: [    6 Warning(s)]
         ignore line: [    0 Error(s)]
         ignore line: []
-        ignore line: [Time Elapsed 00:00:06.08]
+        ignore line: [Time Elapsed 00:00:03.45]
         ignore line: []
         ignore line: []
         linker tool for 'CUDA': C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
@@ -2056,8 +2056,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-hbrq72"
-      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-hbrq72"
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-gxpljs"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-gxpljs"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -2066,39 +2066,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-hbrq72'
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-gxpljs'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_38aac.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b4540.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 3/2/2026 9:55:49 PM.
+        Build started 3/2/2026 11:21:03 PM.
         
-        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hbrq72\\cmTC_38aac.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gxpljs\\cmTC_b4540.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hbrq72\\Debug\\".
-          Creating directory "cmTC_38aac.dir\\Debug\\cmTC_38aac.tlog\\".
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gxpljs\\Debug\\".
+          Creating directory "cmTC_b4540.dir\\Debug\\cmTC_b4540.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_38aac.dir\\Debug\\cmTC_38aac.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_38aac.dir\\Debug\\cmTC_38aac.tlog\\unsuccessfulbuild".
+          Creating "cmTC_b4540.dir\\Debug\\cmTC_b4540.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_b4540.dir\\Debug\\cmTC_b4540.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_38aac.dir\\Debug\\\\" /Fd"cmTC_38aac.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_b4540.dir\\Debug\\\\" /Fd"cmTC_b4540.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_38aac.dir\\Debug\\\\" /Fd"cmTC_38aac.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_b4540.dir\\Debug\\\\" /Fd"cmTC_b4540.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hbrq72\\Debug\\cmTC_38aac.exe" /INCREMENTAL /ILK:"cmTC_38aac.dir\\Debug\\cmTC_38aac.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-hbrq72/Debug/cmTC_38aac.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-hbrq72/Debug/cmTC_38aac.lib" /MACHINE:X64  /machine:x64 cmTC_38aac.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_38aac.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hbrq72\\Debug\\cmTC_38aac.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gxpljs\\Debug\\cmTC_b4540.exe" /INCREMENTAL /ILK:"cmTC_b4540.dir\\Debug\\cmTC_b4540.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-gxpljs/Debug/cmTC_b4540.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-gxpljs/Debug/cmTC_b4540.lib" /MACHINE:X64  /machine:x64 cmTC_b4540.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_b4540.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gxpljs\\Debug\\cmTC_b4540.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_38aac.dir\\Debug\\cmTC_38aac.tlog\\unsuccessfulbuild".
-          Touching "cmTC_38aac.dir\\Debug\\cmTC_38aac.tlog\\cmTC_38aac.lastbuildstate".
-        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hbrq72\\cmTC_38aac.vcxproj" (default targets).
+          Deleting file "cmTC_b4540.dir\\Debug\\cmTC_b4540.tlog\\unsuccessfulbuild".
+          Touching "cmTC_b4540.dir\\Debug\\cmTC_b4540.tlog\\cmTC_b4540.lastbuildstate".
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gxpljs\\cmTC_b4540.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.50
+        Time Elapsed 00:00:00.89
         
       exitCode: 0
   -
@@ -2129,4 +2129,464 @@ events:
       Running the C compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.44.35223.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:333 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:9 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-m1f7l7"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-m1f7l7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-m1f7l7'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_31b4c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 3/2/2026 11:21:05 PM.
+        
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m1f7l7\\cmTC_31b4c.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m1f7l7\\Debug\\".
+          Creating directory "cmTC_31b4c.dir\\Debug\\cmTC_31b4c.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_31b4c.dir\\Debug\\cmTC_31b4c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_31b4c.dir\\Debug\\cmTC_31b4c.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /openmp /Fo"cmTC_31b4c.dir\\Debug\\\\" /Fd"cmTC_31b4c.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m1f7l7\\OpenMPTryFlag.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /openmp /Fo"cmTC_31b4c.dir\\Debug\\\\" /Fd"cmTC_31b4c.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m1f7l7\\OpenMPTryFlag.c"
+          OpenMPTryFlag.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m1f7l7\\Debug\\cmTC_31b4c.exe" /INCREMENTAL /ILK:"cmTC_31b4c.dir\\Debug\\cmTC_31b4c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-m1f7l7/Debug/cmTC_31b4c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-m1f7l7/Debug/cmTC_31b4c.lib" /MACHINE:X64  /machine:x64 cmTC_31b4c.dir\\Debug\\OpenMPTryFlag.obj
+          cmTC_31b4c.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m1f7l7\\Debug\\cmTC_31b4c.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_31b4c.dir\\Debug\\cmTC_31b4c.tlog\\unsuccessfulbuild".
+          Touching "cmTC_31b4c.dir\\Debug\\cmTC_31b4c.tlog\\cmTC_31b4c.lastbuildstate".
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m1f7l7\\cmTC_31b4c.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.87
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:333 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:9 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-mflcye"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-mflcye"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-mflcye'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6db20.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 3/2/2026 11:21:07 PM.
+        
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mflcye\\cmTC_6db20.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mflcye\\Debug\\".
+          Creating directory "cmTC_6db20.dir\\Debug\\cmTC_6db20.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_6db20.dir\\Debug\\cmTC_6db20.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_6db20.dir\\Debug\\cmTC_6db20.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /openmp /std:c++20 /Fo"cmTC_6db20.dir\\Debug\\\\" /Fd"cmTC_6db20.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mflcye\\OpenMPTryFlag.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /openmp /std:c++20 /Fo"cmTC_6db20.dir\\Debug\\\\" /Fd"cmTC_6db20.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mflcye\\OpenMPTryFlag.cpp"
+          OpenMPTryFlag.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mflcye\\Debug\\cmTC_6db20.exe" /INCREMENTAL /ILK:"cmTC_6db20.dir\\Debug\\cmTC_6db20.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-mflcye/Debug/cmTC_6db20.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-mflcye/Debug/cmTC_6db20.lib" /MACHINE:X64  /machine:x64 cmTC_6db20.dir\\Debug\\OpenMPTryFlag.obj
+          cmTC_6db20.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mflcye\\Debug\\cmTC_6db20.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_6db20.dir\\Debug\\cmTC_6db20.tlog\\unsuccessfulbuild".
+          Touching "cmTC_6db20.dir\\Debug\\cmTC_6db20.tlog\\cmTC_6db20.lastbuildstate".
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mflcye\\cmTC_6db20.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.83
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:333 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:9 (find_package)"
+    description: "Detecting CUDA OpenMP compiler info"
+    directories:
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-4p7l1g"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-4p7l1g"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CUDA_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-4p7l1g'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ed0a1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 3/2/2026 11:21:08 PM.
+        
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\cmTC_ed0a1.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\Debug\\".
+          Creating directory "cmTC_ed0a1.dir\\Debug\\cmTC_ed0a1.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_ed0a1.dir\\Debug\\cmTC_ed0a1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ed0a1.dir\\Debug\\cmTC_ed0a1.tlog\\unsuccessfulbuild".
+        AddCudaCompileDeps:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=1 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" /I. /FIcuda_runtime.h /c C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\OpenMPTryFlag.cu 
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\cmTC_ed0a1.vcxproj" (1) is building "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\cmTC_ed0a1.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+        CudaBuildCore:
+          Compiling CUDA source file OpenMPTryFlag.cu...
+          cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmp68a337b0d1204053bffa1622f6843eaa.cmd"
+          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_ed0a1\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_ed0a1.dir\\Debug\\vc143.pdb" -o cmTC_ed0a1.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\OpenMPTryFlag.cu"
+          
+          C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_ed0a1\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_ed0a1.dir\\Debug\\vc143.pdb" -o cmTC_ed0a1.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\OpenMPTryFlag.cu" 
+          nvcc fatal   : Unknown option '-openmp'
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Microsoft\\VC\\v170\\BuildCustomizations\\CUDA 13.1.targets(803,9): error MSB3721: The command ""C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_ed0a1\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_ed0a1.dir\\Debug\\vc143.pdb" -o cmTC_ed0a1.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\OpenMPTryFlag.cu"" exited with code 1. [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\cmTC_ed0a1.vcxproj]
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\cmTC_ed0a1.vcxproj" (CudaBuildCore target(s)) -- FAILED.
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\cmTC_ed0a1.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\cmTC_ed0a1.vcxproj" (default target) (1) ->
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\cmTC_ed0a1.vcxproj" (CudaBuildCore target) (1:2) ->
+        (CudaBuildCore target) -> 
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Microsoft\\VC\\v170\\BuildCustomizations\\CUDA 13.1.targets(803,9): error MSB3721: The command ""C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_ed0a1\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_ed0a1.dir\\Debug\\vc143.pdb" -o cmTC_ed0a1.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\OpenMPTryFlag.cu"" exited with code 1. [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4p7l1g\\cmTC_ed0a1.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.35
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:574 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:714 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:9 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-5bicxf"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-5bicxf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-5bicxf'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_20e74.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 3/2/2026 11:21:10 PM.
+        
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5bicxf\\cmTC_20e74.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5bicxf\\Debug\\".
+          Creating directory "cmTC_20e74.dir\\Debug\\cmTC_20e74.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_20e74.dir\\Debug\\cmTC_20e74.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_20e74.dir\\Debug\\cmTC_20e74.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /openmp /Fo"cmTC_20e74.dir\\Debug\\\\" /Fd"cmTC_20e74.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5bicxf\\OpenMPCheckVersion.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /openmp /Fo"cmTC_20e74.dir\\Debug\\\\" /Fd"cmTC_20e74.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5bicxf\\OpenMPCheckVersion.c"
+          OpenMPCheckVersion.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5bicxf\\Debug\\cmTC_20e74.exe" /INCREMENTAL /ILK:"cmTC_20e74.dir\\Debug\\cmTC_20e74.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-5bicxf/Debug/cmTC_20e74.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-5bicxf/Debug/cmTC_20e74.lib" /MACHINE:X64  /machine:x64 cmTC_20e74.dir\\Debug\\OpenMPCheckVersion.obj
+          cmTC_20e74.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5bicxf\\Debug\\cmTC_20e74.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_20e74.dir\\Debug\\cmTC_20e74.tlog\\unsuccessfulbuild".
+          Touching "cmTC_20e74.dir\\Debug\\cmTC_20e74.tlog\\cmTC_20e74.lastbuildstate".
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5bicxf\\cmTC_20e74.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.84
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:574 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:714 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:9 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-v729qd"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-v729qd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-v729qd'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8d148.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 3/2/2026 11:21:12 PM.
+        
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v729qd\\cmTC_8d148.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v729qd\\Debug\\".
+          Creating directory "cmTC_8d148.dir\\Debug\\cmTC_8d148.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_8d148.dir\\Debug\\cmTC_8d148.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_8d148.dir\\Debug\\cmTC_8d148.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /openmp /std:c++20 /Fo"cmTC_8d148.dir\\Debug\\\\" /Fd"cmTC_8d148.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v729qd\\OpenMPCheckVersion.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /openmp /std:c++20 /Fo"cmTC_8d148.dir\\Debug\\\\" /Fd"cmTC_8d148.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v729qd\\OpenMPCheckVersion.cpp"
+          OpenMPCheckVersion.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v729qd\\Debug\\cmTC_8d148.exe" /INCREMENTAL /ILK:"cmTC_8d148.dir\\Debug\\cmTC_8d148.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-v729qd/Debug/cmTC_8d148.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-v729qd/Debug/cmTC_8d148.lib" /MACHINE:X64  /machine:x64 cmTC_8d148.dir\\Debug\\OpenMPCheckVersion.obj
+          cmTC_8d148.vcxproj -> C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v729qd\\Debug\\cmTC_8d148.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_8d148.dir\\Debug\\cmTC_8d148.tlog\\unsuccessfulbuild".
+          Touching "cmTC_8d148.dir\\Debug\\cmTC_8d148.tlog\\cmTC_8d148.lastbuildstate".
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v729qd\\cmTC_8d148.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.85
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:333 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:9 (find_package)"
+    description: "Detecting CUDA OpenMP compiler info"
+    directories:
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-u3fgqr"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-u3fgqr"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CUDA_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-u3fgqr'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3b24a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 3/2/2026 11:24:13 PM.
+        
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\cmTC_3b24a.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\Debug\\".
+          Creating directory "cmTC_3b24a.dir\\Debug\\cmTC_3b24a.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_3b24a.dir\\Debug\\cmTC_3b24a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_3b24a.dir\\Debug\\cmTC_3b24a.tlog\\unsuccessfulbuild".
+        AddCudaCompileDeps:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=1 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" /I. /FIcuda_runtime.h /c C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\OpenMPTryFlag.cu 
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\cmTC_3b24a.vcxproj" (1) is building "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\cmTC_3b24a.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+        CudaBuildCore:
+          Compiling CUDA source file OpenMPTryFlag.cu...
+          cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmp4f6337c899b44a5f83cd8157569f7c75.cmd"
+          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_3b24a\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_3b24a.dir\\Debug\\vc143.pdb" -o cmTC_3b24a.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\OpenMPTryFlag.cu"
+          
+          C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_3b24a\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_3b24a.dir\\Debug\\vc143.pdb" -o cmTC_3b24a.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\OpenMPTryFlag.cu" 
+          nvcc fatal   : Unknown option '-openmp'
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Microsoft\\VC\\v170\\BuildCustomizations\\CUDA 13.1.targets(803,9): error MSB3721: The command ""C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_3b24a\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_3b24a.dir\\Debug\\vc143.pdb" -o cmTC_3b24a.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\OpenMPTryFlag.cu"" exited with code 1. [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\cmTC_3b24a.vcxproj]
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\cmTC_3b24a.vcxproj" (CudaBuildCore target(s)) -- FAILED.
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\cmTC_3b24a.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\cmTC_3b24a.vcxproj" (default target) (1) ->
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\cmTC_3b24a.vcxproj" (CudaBuildCore target) (1:2) ->
+        (CudaBuildCore target) -> 
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Microsoft\\VC\\v170\\BuildCustomizations\\CUDA 13.1.targets(803,9): error MSB3721: The command ""C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_3b24a\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_3b24a.dir\\Debug\\vc143.pdb" -o cmTC_3b24a.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\OpenMPTryFlag.cu"" exited with code 1. [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u3fgqr\\cmTC_3b24a.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.27
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:333 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:9 (find_package)"
+    description: "Detecting CUDA OpenMP compiler info"
+    directories:
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-d1o4ej"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-d1o4ej"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CUDA_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-d1o4ej'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3aa56.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 3/2/2026 11:24:44 PM.
+        
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\cmTC_3aa56.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\Debug\\".
+          Creating directory "cmTC_3aa56.dir\\Debug\\cmTC_3aa56.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_3aa56.dir\\Debug\\cmTC_3aa56.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_3aa56.dir\\Debug\\cmTC_3aa56.tlog\\unsuccessfulbuild".
+        AddCudaCompileDeps:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=1 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" /I. /FIcuda_runtime.h /c C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\OpenMPTryFlag.cu 
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\cmTC_3aa56.vcxproj" (1) is building "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\cmTC_3aa56.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+        CudaBuildCore:
+          Compiling CUDA source file OpenMPTryFlag.cu...
+          cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmpb3d985a3b44a405c91333f9fb68fbf69.cmd"
+          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_3aa56\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_3aa56.dir\\Debug\\vc143.pdb" -o cmTC_3aa56.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\OpenMPTryFlag.cu"
+          
+          C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_3aa56\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_3aa56.dir\\Debug\\vc143.pdb" -o cmTC_3aa56.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\OpenMPTryFlag.cu" 
+          nvcc fatal   : Unknown option '-openmp'
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Microsoft\\VC\\v170\\BuildCustomizations\\CUDA 13.1.targets(803,9): error MSB3721: The command ""C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_3aa56\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_3aa56.dir\\Debug\\vc143.pdb" -o cmTC_3aa56.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\OpenMPTryFlag.cu"" exited with code 1. [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\cmTC_3aa56.vcxproj]
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\cmTC_3aa56.vcxproj" (CudaBuildCore target(s)) -- FAILED.
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\cmTC_3aa56.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\cmTC_3aa56.vcxproj" (default target) (1) ->
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\cmTC_3aa56.vcxproj" (CudaBuildCore target) (1:2) ->
+        (CudaBuildCore target) -> 
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Microsoft\\VC\\v170\\BuildCustomizations\\CUDA 13.1.targets(803,9): error MSB3721: The command ""C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_3aa56\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_3aa56.dir\\Debug\\vc143.pdb" -o cmTC_3aa56.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\OpenMPTryFlag.cu"" exited with code 1. [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1o4ej\\cmTC_3aa56.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.25
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:333 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:9 (find_package)"
+    description: "Detecting CUDA OpenMP compiler info"
+    directories:
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-xoxi15"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-xoxi15"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CUDA_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-xoxi15'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d35cb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 3/2/2026 11:24:57 PM.
+        
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\cmTC_d35cb.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\Debug\\".
+          Creating directory "cmTC_d35cb.dir\\Debug\\cmTC_d35cb.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_d35cb.dir\\Debug\\cmTC_d35cb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d35cb.dir\\Debug\\cmTC_d35cb.tlog\\unsuccessfulbuild".
+        AddCudaCompileDeps:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=1 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" /I. /FIcuda_runtime.h /c C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\OpenMPTryFlag.cu 
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\cmTC_d35cb.vcxproj" (1) is building "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\cmTC_d35cb.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+        CudaBuildCore:
+          Compiling CUDA source file OpenMPTryFlag.cu...
+          cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmp3e03377e214c4638a6552d090ff3e174.cmd"
+          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_d35cb\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_d35cb.dir\\Debug\\vc143.pdb" -o cmTC_d35cb.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\OpenMPTryFlag.cu"
+          
+          C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_d35cb\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_d35cb.dir\\Debug\\vc143.pdb" -o cmTC_d35cb.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\OpenMPTryFlag.cu" 
+          nvcc fatal   : Unknown option '-openmp'
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Microsoft\\VC\\v170\\BuildCustomizations\\CUDA 13.1.targets(803,9): error MSB3721: The command ""C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_d35cb\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_d35cb.dir\\Debug\\vc143.pdb" -o cmTC_d35cb.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\OpenMPTryFlag.cu"" exited with code 1. [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\cmTC_d35cb.vcxproj]
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\cmTC_d35cb.vcxproj" (CudaBuildCore target(s)) -- FAILED.
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\cmTC_d35cb.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\cmTC_d35cb.vcxproj" (default target) (1) ->
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\cmTC_d35cb.vcxproj" (CudaBuildCore target) (1:2) ->
+        (CudaBuildCore target) -> 
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Microsoft\\VC\\v170\\BuildCustomizations\\CUDA 13.1.targets(803,9): error MSB3721: The command ""C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_d35cb\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_d35cb.dir\\Debug\\vc143.pdb" -o cmTC_d35cb.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\OpenMPTryFlag.cu"" exited with code 1. [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xoxi15\\cmTC_d35cb.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.25
+        
+      exitCode: 1
 ...
