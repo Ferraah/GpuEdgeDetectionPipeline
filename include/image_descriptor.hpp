@@ -1,6 +1,5 @@
 #ifndef PIPELINE_HPP
 #define PIPELINE_HPP
-#include <cstdint>
 #include <cuda_runtime.h>
 
 struct ImageDescriptor {

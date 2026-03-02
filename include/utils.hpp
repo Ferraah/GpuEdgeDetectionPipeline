@@ -12,6 +12,18 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=t
 
 
 namespace utils {
+    
+    void profile_previous_step(cudaEvent_t start, std::vector<float> &timings){
+        cudaEvent_t end;
+        cudaEventCreate(&end);
+        cudaEventRecord(end);
+        cudaEventSynchronize(end);
+        float tmp;
+        cudaEventElapsedTime(&tmp, start, end);
+        timings.push_back(tmp);
+        cudaEventDestroy(end);
+    }
+
     void load_image(std::string path, uint8_t*& data_mono, uint8_t*& data_bgr, int& width, int& height) {
         int channels;
         unsigned char* _full_data = stbi_load(path.c_str(), &width, &height, &channels, 3);

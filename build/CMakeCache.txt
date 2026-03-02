@@ -212,6 +212,9 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//No help, variable specified on the command line.
+CUDA_ARCHITECTURES:UNINITIALIZED=all
+
 //Value Computed by CMake
 EdgeDetectionPipeline_BINARY_DIR:STATIC=C:/Users/dferrario/EdgeDetectionPipeline/build
 

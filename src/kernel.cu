@@ -4,7 +4,6 @@
 #define KERNEL_CUH
 
 #include <cuda_runtime.h>
-#include <cstdint>
 #include <iostream>
 #include "kernel.cuh"
 
