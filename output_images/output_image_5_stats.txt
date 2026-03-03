@@ -1,0 +1,14 @@
+Image Statistics
+================
+Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\06-elephant_3.bmp
+Dimensions: 512x512 (262144 pixels)
+
+Stage Timings (ms):
+-------------------
+  Load+Transfer: 0.250048 ms
+  Gaussian: 0.58064 ms
+  Laplacian: 0.366592 ms
+  Binarization: 0.99632 ms
+  Save: 0.92544 ms
+-------------------
+  Total: 3.11904 ms

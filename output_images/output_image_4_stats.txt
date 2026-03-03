@@ -1,0 +1,14 @@
+Image Statistics
+================
+Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\05-WIREFRAME-2.bmp
+Dimensions: 500x332 (166000 pixels)
+
+Stage Timings (ms):
+-------------------
+  Load+Transfer: 0.238048 ms
+  Gaussian: 0.490112 ms
+  Laplacian: 0.813056 ms
+  Binarization: 0.954464 ms
+  Save: 0.002912 ms
+-------------------
+  Total: 2.49859 ms

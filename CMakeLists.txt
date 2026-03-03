@@ -13,8 +13,14 @@ endif()
 include_directories(include)
 enable_language(CUDA)
 set(CMAKE_CUDA_STANDARD 11)
+set(CMAKE_CUDA_ARCHITECTURES 89)
 
 file(GLOB_RECURSE sources      src/*.cpp src/*.c src/*.cu include/*.h include/*.hpp include/*.cuh)
 
 add_executable(EdgeDetectionPipeline ${sources})
 target_link_libraries(EdgeDetectionPipeline PRIVATE cuda)
+
+# Unit tests
+add_executable(TestOutputImages tests/test_output_images.cpp)
+enable_testing()
+add_test(NAME OutputImageComparison COMMAND TestOutputImages)

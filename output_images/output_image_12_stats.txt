@@ -1,0 +1,14 @@
+Image Statistics
+================
+Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\14-comic.bmp
+Dimensions: 250x361 (90250 pixels)
+
+Stage Timings (ms):
+-------------------
+  Load+Transfer: 0.238368 ms
+  Gaussian: 0.50464 ms
+  Laplacian: 0.017408 ms
+  Binarization: 0.633728 ms
+  Save: 0.00288 ms
+-------------------
+  Total: 1.39702 ms

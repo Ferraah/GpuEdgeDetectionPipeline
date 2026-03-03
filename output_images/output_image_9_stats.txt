@@ -1,0 +1,14 @@
+Image Statistics
+================
+Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\11-NYUD-2.bmp
+Dimensions: 560x425 (238000 pixels)
+
+Stage Timings (ms):
+-------------------
+  Load+Transfer: 0.795168 ms
+  Gaussian: 0.14032 ms
+  Laplacian: 0.180224 ms
+  Binarization: 1.13136 ms
+  Save: 0.83888 ms
+-------------------
+  Total: 3.08595 ms

@@ -1,6 +1,8 @@
 #ifndef UTILS_HPP
 #define UTILS_HPP
 
+#include <fstream>
+
 #define ck(ans) { gpuAssert((ans), __FILE__, __LINE__); }
 inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=true) {
     if (code != cudaSuccess) {
@@ -70,6 +72,31 @@ namespace utils {
     void get_images_paths(const std::string& folder_path, std::vector<std::string>& img_paths) {
         for (const auto & entry : fs::directory_iterator(folder_path))
             img_paths.push_back(entry.path().string());
+    }
+
+    void save_image_stats(const std::string& stats_path, const std::string& source_path, 
+                          int width, int height, const float stage_times[5]) {
+        const char* stage_names[5] = {"Load+Transfer", "Gaussian", "Laplacian", "Binarization", "Save"};
+        float total_time = 0.0f;
+        for (int s = 0; s < 5; s++) {
+            total_time += stage_times[s];
+        }
+
+        std::ofstream stats_file(stats_path);
+        if (stats_file.is_open()) {
+            stats_file << "Image Statistics\n";
+            stats_file << "================\n";
+            stats_file << "Source: " << source_path << "\n";
+            stats_file << "Dimensions: " << width << "x" << height << " (" << (width * height) << " pixels)\n\n";
+            stats_file << "Stage Timings (ms):\n";
+            stats_file << "-------------------\n";
+            for (int s = 0; s < 5; s++) {
+                stats_file << "  " << stage_names[s] << ": " << stage_times[s] << " ms\n";
+            }
+            stats_file << "-------------------\n";
+            stats_file << "  Total: " << total_time << " ms\n";
+            stats_file.close();
+        }
     }
 
 }

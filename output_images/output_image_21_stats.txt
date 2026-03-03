@@ -1,0 +1,14 @@
+Image Statistics
+================
+Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\23-img_011_SRF_2_HR.bmp
+Dimensions: 282x512 (144384 pixels)
+
+Stage Timings (ms):
+-------------------
+  Load+Transfer: 0.292352 ms
+  Gaussian: 0.111776 ms
+  Laplacian: 0.188416 ms
+  Binarization: 0.514272 ms
+  Save: 0.396832 ms
+-------------------
+  Total: 1.50365 ms

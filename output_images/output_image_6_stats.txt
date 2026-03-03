@@ -1,0 +1,14 @@
+Image Statistics
+================
+Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\07-CITYSCAPES-2C.bmp
+Dimensions: 720x720 (518400 pixels)
+
+Stage Timings (ms):
+-------------------
+  Load+Transfer: 0.493408 ms
+  Gaussian: 0.651104 ms
+  Laplacian: 0.301056 ms
+  Binarization: 0.93184 ms
+  Save: 1.72314 ms
+-------------------
+  Total: 4.10054 ms

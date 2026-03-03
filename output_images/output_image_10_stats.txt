@@ -1,0 +1,14 @@
+Image Statistics
+================
+Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\12-cameraman.bmp
+Dimensions: 536x536 (287296 pixels)
+
+Stage Timings (ms):
+-------------------
+  Load+Transfer: 0.307968 ms
+  Gaussian: 0.182496 ms
+  Laplacian: 0.104448 ms
+  Binarization: 0.586944 ms
+  Save: 0.881952 ms
+-------------------
+  Total: 2.06381 ms

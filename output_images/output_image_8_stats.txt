@@ -1,0 +1,14 @@
+Image Statistics
+================
+Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\09-MDBD-1C.bmp
+Dimensions: 720x720 (518400 pixels)
+
+Stage Timings (ms):
+-------------------
+  Load+Transfer: 0.328512 ms
+  Gaussian: 0.087424 ms
+  Laplacian: 0.325632 ms
+  Binarization: 1.03078 ms
+  Save: 2.08413 ms
+-------------------
+  Total: 3.85648 ms
