@@ -15,13 +15,13 @@ namespace utils {
     
     void profile_previous_step(cudaEvent_t start, std::vector<float> &timings){
         cudaEvent_t end;
-        cudaEventCreate(&end);
-        cudaEventRecord(end);
-        cudaEventSynchronize(end);
+        ck(cudaEventCreate(&end));
+        ck(cudaEventRecord(end));
+        ck(cudaEventSynchronize(end));
         float tmp;
-        cudaEventElapsedTime(&tmp, start, end);
+        ck(cudaEventElapsedTime(&tmp, start, end));
         timings.push_back(tmp);
-        cudaEventDestroy(end);
+        ck(cudaEventDestroy(end));
     }
 
     void load_image(std::string path, uint8_t*& data_mono, uint8_t*& data_bgr, int& width, int& height) {
@@ -72,5 +72,68 @@ namespace utils {
             img_paths.push_back(entry.path().string());
     }
 
+    // ============================================================================
+    // Pipeline Statistics Structure
+    // Thread-safe storage and reporting of execution times for each pipeline stage
+    // ============================================================================
+    struct PipelineStats {
+        std::vector<std::vector<float>> stage_timings; // [stage][measurements]
+        omp_lock_t lock;                               // OpenMP lock for thread-safe access
+        
+        /**
+        * Constructor: Initialize stages and OpenMP lock
+        */
+        PipelineStats() {
+            stage_timings.resize(5); // 5 stages: Load, Gaussian, Laplacian, Binarize, Save
+            omp_init_lock(&lock);
+        }
+        
+        /**
+        * Destructor: Clean up OpenMP lock
+        */
+        ~PipelineStats() {
+            omp_destroy_lock(&lock);
+        }
+        
+        /**
+        * @brief Add timing measurement for a pipeline stage (thread-safe)
+        * @param stage Stage index (0-4)
+        * @param ms Execution time in milliseconds
+        */
+        void add_timing(int stage, float ms) {
+            omp_set_lock(&lock);
+            stage_timings[stage].push_back(ms);
+            omp_unset_lock(&lock);
+        }
+        
+        /**
+        * @brief Print performance statistics for all stages
+        * Displays average, min, and max times for each stage across all images
+        */
+        void print_stats() {
+            const char* stage_names[] = {"Load", "Gaussian", "Laplacian", "Binarize", "Save"};
+            std::cout << "\n=============== Pipeline Performance Statistics ===============\n";
+            
+            for(int i = 0; i < 5; i++) {
+                if(stage_timings[i].empty()) {
+                    std::cout << stage_names[i] << ": No data available\n";
+                    continue;
+                }
+                
+                float sum = 0, min_val = stage_timings[i][0], max_val = stage_timings[i][0];
+                for(float t : stage_timings[i]) {
+                    sum += t;
+                    min_val = std::min(min_val, t);
+                    max_val = std::max(max_val, t);
+                }
+                
+                float avg = sum / stage_timings[i].size();
+                std::cout << stage_names[i] << ": " << avg << " ms avg"
+                        << " (min: " << min_val << " ms, max: " << max_val << " ms)"
+                        << " over " << stage_timings[i].size() << " images\n";
+            }
+            std::cout << "=============================================================\n";
+        }
+    };
 }
 #endif // UTILS_HPP

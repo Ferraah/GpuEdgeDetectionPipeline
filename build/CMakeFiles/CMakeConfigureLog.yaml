@@ -2590,3 +2590,66 @@ events:
         
       exitCode: 1
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:333 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:9 (find_package)"
+    description: "Detecting CUDA OpenMP compiler info"
+    directories:
+      source: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-9yme1y"
+      binary: "C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-9yme1y"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CUDA_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dferrario/EdgeDetectionPipeline/build/CMakeFiles/CMakeScratch/TryCompile-9yme1y'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5bad9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 3/3/2026 9:44:12 AM.
+        
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\cmTC_5bad9.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\Debug\\".
+          Creating directory "cmTC_5bad9.dir\\Debug\\cmTC_5bad9.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_5bad9.dir\\Debug\\cmTC_5bad9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5bad9.dir\\Debug\\cmTC_5bad9.tlog\\unsuccessfulbuild".
+        AddCudaCompileDeps:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=1 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include" /I. /FIcuda_runtime.h /c C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\OpenMPTryFlag.cu 
+        Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\cmTC_5bad9.vcxproj" (1) is building "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\cmTC_5bad9.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+        CudaBuildCore:
+          Compiling CUDA source file OpenMPTryFlag.cu...
+          cmd.exe /C "C:\\Users\\dferrario\\AppData\\Local\\Temp\\tmp656d2dd534024aef9278a34e09c634ff.cmd"
+          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_5bad9\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_5bad9.dir\\Debug\\vc143.pdb" -o cmTC_5bad9.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\OpenMPTryFlag.cu"
+          
+          C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_5bad9\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_5bad9.dir\\Debug\\vc143.pdb" -o cmTC_5bad9.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\OpenMPTryFlag.cu" 
+          nvcc fatal   : Unknown option '-openmp'
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Microsoft\\VC\\v170\\BuildCustomizations\\CUDA 13.1.targets(803,9): error MSB3721: The command ""C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_5bad9\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_5bad9.dir\\Debug\\vc143.pdb" -o cmTC_5bad9.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\OpenMPTryFlag.cu"" exited with code 1. [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\cmTC_5bad9.vcxproj]
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\cmTC_5bad9.vcxproj" (CudaBuildCore target(s)) -- FAILED.
+        Done Building Project "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\cmTC_5bad9.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\cmTC_5bad9.vcxproj" (default target) (1) ->
+        "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\cmTC_5bad9.vcxproj" (CudaBuildCore target) (1:2) ->
+        (CudaBuildCore target) -> 
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Microsoft\\VC\\v170\\BuildCustomizations\\CUDA 13.1.targets(803,9): error MSB3721: The command ""C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include"     --keep-dir cmTC_5bad9\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -openmp -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_5bad9.dir\\Debug\\vc143.pdb" -o cmTC_5bad9.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\OpenMPTryFlag.cu"" exited with code 1. [C:\\Users\\dferrario\\EdgeDetectionPipeline\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9yme1y\\cmTC_5bad9.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.38
+        
+      exitCode: 1
+...
