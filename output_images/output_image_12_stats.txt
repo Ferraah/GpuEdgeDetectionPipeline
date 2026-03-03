@@ -5,10 +5,10 @@ Dimensions: 250x361 (90250 pixels)
 
 Stage Timings (ms):
 -------------------
-  Load+Transfer: 0.238368 ms
-  Gaussian: 0.50464 ms
-  Laplacian: 0.017408 ms
-  Binarization: 0.633728 ms
-  Save: 0.00288 ms
+  Load+Transfer : 0.141 ms
+  Gaussian      : 0.128 ms
+  Laplacian     : 0.010 ms
+  Binarization  : 0.061 ms
+  Save          : 0.454 ms
 -------------------
-  Total: 1.39702 ms
+  Total         : 0.795 ms

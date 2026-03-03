@@ -5,10 +5,10 @@ Dimensions: 510x339 (172890 pixels)
 
 Stage Timings (ms):
 -------------------
-  Load+Transfer: 0.257856 ms
-  Gaussian: 0.527392 ms
-  Laplacian: 1.1735 ms
-  Binarization: 0.162016 ms
-  Save: 1.14605 ms
+  Load+Transfer : 0.292 ms
+  Gaussian      : 0.519 ms
+  Laplacian     : 0.025 ms
+  Binarization  : 0.159 ms
+  Save          : 0.355 ms
 -------------------
-  Total: 3.26682 ms
+  Total         : 1.350 ms

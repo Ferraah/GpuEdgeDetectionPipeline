@@ -5,10 +5,10 @@ Dimensions: 720x720 (518400 pixels)
 
 Stage Timings (ms):
 -------------------
-  Load+Transfer: 0.328512 ms
-  Gaussian: 0.087424 ms
-  Laplacian: 0.325632 ms
-  Binarization: 1.03078 ms
-  Save: 2.08413 ms
+  Load+Transfer : 0.494 ms
+  Gaussian      : 0.375 ms
+  Laplacian     : 0.031 ms
+  Binarization  : 0.284 ms
+  Save          : 2.071 ms
 -------------------
-  Total: 3.85648 ms
+  Total         : 3.255 ms

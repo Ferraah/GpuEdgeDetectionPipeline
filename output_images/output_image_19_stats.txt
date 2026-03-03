@@ -5,10 +5,10 @@ Dimensions: 500x400 (200000 pixels)
 
 Stage Timings (ms):
 -------------------
-  Load+Transfer: 0.179968 ms
-  Gaussian: 0.390016 ms
-  Laplacian: 0.73216 ms
-  Binarization: 0.167744 ms
-  Save: 0.775776 ms
+  Load+Transfer : 0.052 ms
+  Gaussian      : 0.114 ms
+  Laplacian     : 0.023 ms
+  Binarization  : 0.167 ms
+  Save          : 1.053 ms
 -------------------
-  Total: 2.24566 ms
+  Total         : 1.408 ms
