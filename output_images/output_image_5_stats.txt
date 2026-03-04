@@ -1,14 +1,14 @@
 Image Statistics
 ================
-Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\06-elephant_3.bmp
+Source: C:\Users\dferrario\EdgeDetectionPipeline\input_images\06-elephant_3.bmp
 Dimensions: 512x512 (262144 pixels)
 
 Stage Timings (ms):
 -------------------
-  Load+Transfer : 0.228 ms
-  Gaussian      : 0.505 ms
-  Laplacian     : 0.032 ms
-  Binarization  : 0.169 ms
-  Save          : 0.654 ms
+  Load (to GPU) : 0.416 ms
+  Gaussian      : 0.217 ms
+  Laplacian     : 0.024 ms
+  Binarization  : 0.181 ms
+  Visualization : 0.482 ms
 -------------------
-  Total         : 1.587 ms
+  Total         : 1.320 ms

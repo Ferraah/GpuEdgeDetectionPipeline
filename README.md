@@ -1,53 +1,239 @@
-# Edge Detection Pipeline
+# GPU Edge Detection Pipeline
 
-This project implements an edge detection pipeline using CUDA for efficient image processing. The pipeline is designed to demonstrate the use of CUDA kernels for performing edge detection operations on images.
+A GPU-accelerated, pipelined image processing system for edge detection and visualization using CUDA.
+
+**Language:** C++17  
+**IDE:** Visual Studio 2022  
+**Platform:** Windows  
+
+---
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Pipeline Architecture](#pipeline-architecture)
+3. [What Was Implemented](#what-was-implemented)
+4. [What Was NOT Implemented](#what-was-not-implemented)
+5. [Design Decisions & Optimizations](#design-decisions--optimizations)
+6. [Performance Metrics](#performance-metrics)
+7. [Project Structure](#project-structure)
+8. [Building & Running](#building--running)
+9. [Future Work](#future-work)
+
+---
+
+## Overview
+
+This project implements a **5-stage GPU-accelerated pipeline** for edge detection, designed to process multiple images concurrently using CUDA streams. The system detects edges using Gaussian smoothing followed by Laplacian edge detection, then visualizes results by overlaying colored edges on the original image.
+
+---
+
+## Pipeline Architecture
+
+```
+Tick:   0       1         2          3          4         5    ...
+Img0: [Load] [Gaussian] [Laplacian] [Binarize] [Visualize]
+Img1:        [Load]     [Gaussian]  [Laplacian] [Binarize] [Visualize]
+Img2:                   [Load]      [Gaussian]  [Laplacian] [Binarize] ...
+```
+
+Each image is assigned its own **CUDA stream**, enabling concurrent execution of different pipeline stages across multiple images. This maximizes GPU utilization by overlapping:
+- Memory transfers (HtoD / DtoH)
+- Kernel execution (convolutions, binarization)
+- CPU work (visualization overlay)
+
+### Pipeline Stages
+
+| Stage | Location | Description |
+|-------|----------|-------------|
+| **1. Pre-Load** | CPU | All images loaded into pinned memory before pipeline starts |
+| **2. Transfer** | GPU | Async HtoD transfer via CUDA stream |
+| **3. Gaussian Filter** | GPU | 3x3 Gaussian convolution (σ=1) for noise reduction |
+| **4. Laplacian Filter** | GPU | 3x3 Laplacian convolution for edge detection |
+| **5. Binarize** | GPU | Threshold edge response + async DtoH transfer |
+| **6. Visualize** | CPU | Create colored edge overlay on original image |
+| **7. Save** | CPU | Batch save all output images at pipeline end |
+
+---
+
+## What Was Implemented
+
+### Core Requirements ✅
+
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| BMP image loading | ✅ | Supports any resolution via stb_image |
+| GPU Gaussian filtering (3x3) | ✅ | Separable kernel, normalized weights |
+| GPU Laplacian edge detection | ✅ | 4-connectivity kernel |
+| GPU thresholding/binarization | ✅ | Configurable threshold value |
+| Colored edge overlay | ✅ | Edges rendered in blue on original |
+| Pipelined execution | ✅ | Per-image CUDA streams |
+| Per-stage timing | ✅ | CUDA events for GPU profiling |
+| Output images saved | ✅ | BMP format in output folder |
+| Per-image stats file | ✅ | Timing breakdown per stage |
+
+### Performance Optimizations ✅
+
+| Optimization | Status | Description |
+|--------------|--------|-------------|
+| Pinned host memory | ✅ | `cudaHostAlloc` for faster DMA transfers |
+| Async memory transfers | ✅ | `cudaMemcpyAsync` with streams |
+| Double-buffered device memory | ✅ | Avoids in-place convolution race conditions |
+| Pre-loading all images | ✅ | Eliminates disk I/O from pipeline hot path |
+| Deferred image saving | ✅ | Batch save at end, not blocking pipeline |
+| Stream synchronization | ✅ | Minimal syncs, only where required |
+
+### Code Quality ✅
+
+| Aspect | Status | Description |
+|--------|--------|-------------|
+| Modular stage functions | ✅ | Each stage is a separate function |
+| Clear documentation | ✅ | Doxygen-style comments throughout |
+| Error handling | ✅ | CUDA error checking macro `ck()` |
+| Configurable parameters | ✅ | Threshold, kernel size as constants |
+
+---
+
+## What Was NOT Implemented
+
+### Missing Requirements ❌
+
+| Requirement | Status | Reason/Notes |
+|-------------|--------|--------------|
+| Centroid detection | ❌ | Connected component analysis not implemented |
+| Object counting | ❌ | Requires centroid/blob detection |
+| GPU utilization metrics | ❌ | Would require CUPTI or Nsight integration |
+| Balanced stage timing | ⚠️ | Convolutions are faster than transfers; not artificially balanced |
+
+### Potential Improvements Not Done
+
+| Improvement | Status | Description |
+|-------------|--------|-------------|
+| Thread pool for I/O | ❌ | Pre-load is sequential (could parallelize) |
+| Memory pool for device buffers | ❌ | Per-image cudaMalloc (could pool) |
+| Shared memory convolution | ❌ | Using global memory (could optimize) |
+| Parallel image saving | ❌ | Sequential save at end (could parallelize) |
+
+---
+
+## Design Decisions & Optimizations
+
+### 1. Per-Image CUDA Streams
+Each image gets its **own CUDA stream**, allowing the GPU to interleave operations from different images. This is critical for hiding memory transfer latency behind kernel execution.
+
+### 2. Pre-Loading Phase
+All images are loaded into CPU pinned memory **before** the pipeline starts. This eliminates disk I/O as a bottleneck during pipeline execution, at the cost of higher memory usage.
+
+### 3. Double-Buffered Device Memory
+Convolution requires reading neighbor pixels while writing output. To avoid race conditions, we use two device buffers (`d_data_mono` and `d_data_mono_out`) and swap pointers after each convolution stage.
+
+### 4. Deferred Image Saving
+The visualization stage prepares the overlay but does **not** write to disk. All images are saved in a batch at the end, keeping the pipeline CPU-bound work minimal.
+
+### 5. Pinned Memory for Transfers
+Using `cudaHostAlloc` for host buffers enables DMA transfers that don't block the CPU and achieve higher bandwidth than pageable memory.
+
+---
+
+## Performance Metrics
+
+Per-stage timing is collected using CUDA events and reported at pipeline completion:
+
+```
+========================================
+Pipeline Performance Statistics
+========================================
+  Load+Transfer: X.XX ms avg (N images)
+  Gaussian:      X.XX ms avg (N images)
+  Laplacian:     X.XX ms avg (N images)
+  Binarization:  X.XX ms avg (N images)
+  Save:          X.XX ms avg (N images)
+----------------------------------------
+  Total: X.XX ms avg per image
+========================================
+```
+
+Individual image stats are written to `output_images/output_image_N_stats.txt`.
+
+---
 
 ## Project Structure
 
 ```
-EdgeDetectionPipeline
-├── src
-│   └── main.cpp        # Entry point of the application
-├── include
-│   └── kernel.cuh      # CUDA kernel declarations and functions
-├── CMakeLists.txt      # CMake configuration file
-└── README.md           # Project documentation
+EdgeDetectionPipeline/
+├── src/
+│   ├── main.cpp           # Pipeline orchestration and entry point
+│   ├── kernel.cu          # CUDA kernels (convolution, binarization)
+│   └── bmpread.c          # BMP file parsing (unused, using stb_image)
+├── include/
+│   ├── kernel.cuh         # CUDA kernel declarations
+│   ├── image_descriptor.hpp # Per-image data structure
+│   ├── utils.hpp          # I/O and utility functions
+│   ├── thread_pool.hpp    # Thread pool (available for future use)
+│   ├── stb_image.h        # Image loading library
+│   └── stb_image_write.h  # Image writing library
+├── tests/
+│   └── test_output_images.cpp  # Output validation tests
+├── output_images/         # Generated output images and stats
+├── CMakeLists.txt         # Build configuration
+└── README.md              # This document
 ```
 
-## Requirements
+---
 
-- CMake
-- CUDA Toolkit
-- A compatible C++ compiler
+## Building & Running
 
-## Building the Project
+### Prerequisites
 
-1. Clone the repository or download the project files.
-2. Open a terminal and navigate to the project directory.
-3. Create a build directory:
-   ```
-   mkdir build
-   cd build
-   ```
-4. Run CMake to configure the project:
-   ```
-   cmake ..
-   ```
-5. Build the project:
-   ```
-   make
-   ```
+- **Visual Studio 2022** with C++ desktop development
+- **CUDA Toolkit 11.0+** (tested with 12.x)
+- **CMake 3.18+**
 
-## Running the Application
+### Build Steps
 
-After building the project, you can run the application using the following command:
-
-```
-./EdgeDetectionPipeline
+```powershell
+# From project root
+mkdir build
+cd build
+cmake ..
+cmake --build . --config Release
 ```
 
-Make sure to provide the necessary input images as required by the application.
+### Running
 
-## License
+1. Place input images (BMP format) in `input_images/` folder
+2. Run the executable:
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+```powershell
+cd build
+.\Release\EdgeDetectionPipeline.exe
+```
+
+3. Output images appear in `output_images/`
+
+### Configuration
+
+Edit constants in `src/main.cpp`:
+
+```cpp
+constexpr uint8_t BINARIZE_THRESHOLD = 5;  // Edge threshold (0-255)
+const std::string input_folder = "...";     // Input path
+const std::string output_folder = "...";    // Output path
+```
+
+---
+
+## Future Work
+
+1. **Centroid Detection**: Implement connected component labeling on GPU to identify objects and compute centroids
+2. **GPU Utilization Metrics**: Integrate CUPTI or use Nsight for detailed GPU occupancy reporting
+3. **Memory Pooling**: Pre-allocate device buffers for max image size to avoid per-image cudaMalloc
+4. **Shared Memory Convolution**: Use shared memory tiling for 2-3x faster convolutions
+5. **Parallel I/O**: Use thread pool for parallel image loading and saving
+6. **Configurable Kernels**: Support different kernel sizes and custom filter coefficients
+
+---
+
+## Author
+
+Edge Detection Pipeline - GPU Performance Evaluation Project

@@ -38,7 +38,7 @@
 // ============================================================================
 
 /// Binarization threshold for edge detection (0-255)
-constexpr uint8_t BINARIZE_THRESHOLD = 16;
+constexpr uint8_t BINARIZE_THRESHOLD = 5;
 
 /// Convolution kernel size (3x3)
 constexpr int KERNEL_SIZE = 3;
@@ -62,21 +62,17 @@ const float LAPLACIAN_KERNEL[9] = {
 // ============================================================================
 
 /**
- * @brief Execute the Load stage - load image and transfer to GPU.
+ * @brief Execute the Load stage - transfer pre-loaded image to GPU.
  * 
- * @param img         Image descriptor to populate
- * @param image_path  Path to the source image file
+ * @param img   Image descriptor with data already loaded in h_data_mono/h_data_bgr
  */
-void executeLoadStage(ImageDescriptor& img, const std::string& image_path) {
-    std::cout << "  [Load] " << image_path << std::endl;
+void executeLoadStage(ImageDescriptor& img) {
+    std::cout << "  [Transfer] " << img.path << std::endl;
     
     // Initialize CUDA resources for this image
     ck(img.initCudaResources());
     
-    // Load image data (CPU)
-    utils::load_image(image_path, img.h_data_mono, img.h_data_bgr, img.width, img.height);
-    
-    // Start timing after CPU load (focus on GPU transfer time)
+    // Start timing for GPU transfer
     ck(cudaEventRecord(img.stage_start[STAGE_LOAD], img.stream));
     
     // Allocate device memory with double-buffering
@@ -157,15 +153,15 @@ void executeBinarizeStage(ImageDescriptor& img) {
  * @param stats_path     Path for the statistics file
  * @param timings        Reference to timing storage arrays
  */
-void executeSaveStage(ImageDescriptor& img, 
+void executeVisualizationStage(ImageDescriptor& img, 
                       const std::string& output_path,
                       const std::string& stats_path,
                       std::array<std::vector<float>, NUM_PIPELINE_STAGES>& timings) {
-    // Wait for GPU work to complete before CPU processing
+    // Wait for GPU work to complete before reading h_data_mono
     ck(cudaStreamSynchronize(img.stream));
     
     ck(cudaEventRecord(img.stage_start[STAGE_SAVE], img.stream));
-    std::cout << "  [Save] " << img.path << std::endl;
+    std::cout << "  [Visualize] " << img.path << std::endl;
     
     const size_t num_pixels = static_cast<size_t>(img.width) * img.height;
     
@@ -181,8 +177,8 @@ void executeSaveStage(ImageDescriptor& img,
     
     ck(cudaEventRecord(img.stage_end[STAGE_SAVE], img.stream));
     
-    // Save output image
-    utils::save_image(output_path, img.h_data_bgr, img.width, img.height, 3);
+    // Store output path for later saving
+    img.output_path = output_path;
     
     // Collect timing data for all stages
     float stage_times[NUM_PIPELINE_STAGES];
@@ -195,9 +191,8 @@ void executeSaveStage(ImageDescriptor& img,
     // Write statistics file
     utils::save_image_stats(stats_path, img.path, img.width, img.height, stage_times);
     
-    // Cleanup
+    // Cleanup overlay buffer
     delete[] h_data_overlay;
-    img.cleanup();
 }
 
 /**
@@ -265,9 +260,16 @@ void runPipeline(std::vector<std::string>& images_paths, const std::string& outp
     std::cout << "Output folder: " << output_folder << "\n";
     std::cout << "========================================\n\n";
     
-    // Storage for images in-flight through the pipeline
-    std::vector<ImageDescriptor> images;
-    images.reserve(num_images);
+    // Pre-load all images into CPU memory
+    std::cout << "--- Pre-loading all images ---\n";
+    std::vector<ImageDescriptor> images(num_images);
+    for (size_t i = 0; i < num_images; i++) {
+        images[i].path = images_paths[i];
+        utils::load_image(images_paths[i], images[i].h_data_mono, images[i].h_data_bgr, 
+                          images[i].width, images[i].height);
+        std::cout << "  [" << (i + 1) << "/" << num_images << "] " << images_paths[i] << std::endl;
+    }
+    std::cout << std::endl;
     
     // Timing storage for each stage
     std::array<std::vector<float>, NUM_PIPELINE_STAGES> timings;
@@ -289,12 +291,9 @@ void runPipeline(std::vector<std::string>& images_paths, const std::string& outp
     for (size_t tick = 0; tick < total_ticks; tick++) {
         std::cout << "--- Pipeline Tick " << tick << " ---\n";
         
-        // Stage 0: Load new image
+        // Stage 0: Transfer pre-loaded image to GPU
         if (tick < num_images) {
-            ImageDescriptor img;
-            img.path = images_paths[tick];
-            executeLoadStage(img, images_paths[tick]);
-            images.push_back(img);
+            executeLoadStage(images[tick]);
         }
         
         // Stage 1: Gaussian filter (image loaded 1 tick ago)
@@ -319,7 +318,7 @@ void runPipeline(std::vector<std::string>& images_paths, const std::string& outp
                                             std::to_string(img_idx) + ".bmp";
             const std::string stats_path = output_folder + "/output_image_" + 
                                            std::to_string(img_idx) + "_stats.txt";
-            executeSaveStage(images[img_idx], output_path, stats_path, timings);
+            executeVisualizationStage(images[img_idx], output_path, stats_path, timings);
         }
         
         std::cout << std::endl;
@@ -328,6 +327,16 @@ void runPipeline(std::vector<std::string>& images_paths, const std::string& outp
     // Cleanup device kernels
     cudaFree(d_kernel_gaussian);
     cudaFree(d_kernel_laplacian);
+    
+    // Save all images at the end of the pipeline
+    std::cout << "--- Saving All Images ---\n";
+    for (size_t i = 0; i < images.size(); i++) {
+        std::cout << "  [Save] " << images[i].output_path << std::endl;
+        utils::save_image(images[i].output_path, images[i].h_data_bgr, 
+                          images[i].width, images[i].height, 3);
+        images[i].cleanup();
+    }
+    std::cout << std::endl;
     
     // Print aggregate statistics
     printPipelineStatistics(timings);
@@ -347,7 +356,7 @@ int main() {
     std::cout << "===========================\n\n";
     
     // Configuration
-    const std::string input_folder = "C:\\Users\\dferrario\\EdgeDetectionPipeline\\UDED\\imgs_bmp";
+    const std::string input_folder = "C:\\Users\\dferrario\\EdgeDetectionPipeline\\input_images";
     const std::string output_folder = "..\\output_images";
     
     // Gather input images

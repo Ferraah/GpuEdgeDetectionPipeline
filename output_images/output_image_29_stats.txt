@@ -1,0 +1,14 @@
+Image Statistics
+================
+Source: C:\Users\dferrario\EdgeDetectionPipeline\input_images\big.bmp
+Dimensions: 5656x4244 (24004064 pixels)
+
+Stage Timings (ms):
+-------------------
+  Load (to GPU) : 5.543 ms
+  Gaussian      : 1.528 ms
+  Laplacian     : 1.144 ms
+  Binarization  : 4.152 ms
+  Visualization : 36.101 ms
+-------------------
+  Total         : 48.468 ms

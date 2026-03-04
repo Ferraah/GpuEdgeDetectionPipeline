@@ -194,8 +194,8 @@ inline void save_image_stats(const std::string& stats_path,
                              const std::string& source_path, 
                              int width, int height, 
                              const float stage_times[5]) {
-    const char* STAGE_NAMES[] = {"Load+Transfer", "Gaussian", "Laplacian", 
-                                  "Binarization", "Save"};
+    const char* STAGE_NAMES[] = {"Load (to GPU)", "Gaussian", "Laplacian", 
+                                  "Binarization", "Visualization"};
     
     float total_time = 0.0f;
     for (int s = 0; s < 5; s++) {

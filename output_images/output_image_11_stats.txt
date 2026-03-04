@@ -1,14 +1,14 @@
 Image Statistics
 ================
-Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\13-BIPED-1C.bmp
+Source: C:\Users\dferrario\EdgeDetectionPipeline\input_images\13-BIPED-1C.bmp
 Dimensions: 720x720 (518400 pixels)
 
 Stage Timings (ms):
 -------------------
-  Load+Transfer : 0.266 ms
-  Gaussian      : 0.183 ms
-  Laplacian     : 0.414 ms
-  Binarization  : 0.194 ms
-  Save          : 1.848 ms
+  Load (to GPU) : 0.145 ms
+  Gaussian      : 0.080 ms
+  Laplacian     : 0.027 ms
+  Binarization  : 0.141 ms
+  Visualization : 0.782 ms
 -------------------
-  Total         : 2.906 ms
+  Total         : 1.176 ms

@@ -35,11 +35,11 @@ enum PipelineStage {
  * @brief Human-readable names for each pipeline stage.
  */
 inline const char* STAGE_NAMES[NUM_PIPELINE_STAGES] = {
-    "Load+Transfer",
+    "Load (to GPU)",
     "Gaussian",
     "Laplacian", 
     "Binarization",
-    "Save"
+    "Visualization"
 };
 
 /**
@@ -68,6 +68,7 @@ struct ImageDescriptor {
 
     // ===== Metadata =====
     std::string path;         ///< Source file path
+    std::string output_path;  ///< Destination file path for saving
     int width;                ///< Image width in pixels
     int height;               ///< Image height in pixels
 

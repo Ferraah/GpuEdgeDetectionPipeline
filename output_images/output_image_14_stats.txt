@@ -1,14 +1,14 @@
 Image Statistics
 ================
-Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\16-tire.bmp
+Source: C:\Users\dferrario\EdgeDetectionPipeline\input_images\16-tire.bmp
 Dimensions: 512x512 (262144 pixels)
 
 Stage Timings (ms):
 -------------------
-  Load+Transfer : 0.251 ms
-  Gaussian      : 0.485 ms
-  Laplacian     : 0.025 ms
-  Binarization  : 0.165 ms
-  Save          : 0.647 ms
+  Load (to GPU) : 0.079 ms
+  Gaussian      : 0.114 ms
+  Laplacian     : 0.051 ms
+  Binarization  : 0.088 ms
+  Visualization : 0.213 ms
 -------------------
-  Total         : 1.572 ms
+  Total         : 0.545 ms

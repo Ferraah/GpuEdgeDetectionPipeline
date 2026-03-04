@@ -1,14 +1,14 @@
 Image Statistics
 ================
-Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\08-ADE20K-1C.bmp
+Source: C:\Users\dferrario\EdgeDetectionPipeline\input_images\08-ADE20K-1C.bmp
 Dimensions: 720x720 (518400 pixels)
 
 Stage Timings (ms):
 -------------------
-  Load+Transfer : 0.464 ms
-  Gaussian      : 0.454 ms
-  Laplacian     : 0.032 ms
-  Binarization  : 0.255 ms
-  Save          : 1.199 ms
+  Load (to GPU) : 0.129 ms
+  Gaussian      : 0.067 ms
+  Laplacian     : 0.037 ms
+  Binarization  : 0.117 ms
+  Visualization : 0.900 ms
 -------------------
-  Total         : 2.404 ms
+  Total         : 1.250 ms

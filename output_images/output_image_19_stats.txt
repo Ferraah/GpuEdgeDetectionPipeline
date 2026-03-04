@@ -1,14 +1,14 @@
 Image Statistics
 ================
-Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\21-00065305.bmp
+Source: C:\Users\dferrario\EdgeDetectionPipeline\input_images\21-00065305.bmp
 Dimensions: 500x400 (200000 pixels)
 
 Stage Timings (ms):
 -------------------
-  Load+Transfer : 0.052 ms
-  Gaussian      : 0.114 ms
-  Laplacian     : 0.023 ms
-  Binarization  : 0.167 ms
-  Save          : 1.053 ms
+  Load (to GPU) : 0.256 ms
+  Gaussian      : 0.039 ms
+  Laplacian     : 0.015 ms
+  Binarization  : 0.140 ms
+  Visualization : 0.320 ms
 -------------------
-  Total         : 1.408 ms
+  Total         : 0.769 ms

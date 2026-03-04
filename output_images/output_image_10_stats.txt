@@ -1,14 +1,14 @@
 Image Statistics
 ================
-Source: C:\Users\dferrario\EdgeDetectionPipeline\UDED\imgs_bmp\12-cameraman.bmp
+Source: C:\Users\dferrario\EdgeDetectionPipeline\input_images\12-cameraman.bmp
 Dimensions: 536x536 (287296 pixels)
 
 Stage Timings (ms):
 -------------------
-  Load+Transfer : 0.241 ms
-  Gaussian      : 0.148 ms
-  Laplacian     : 0.019 ms
-  Binarization  : 0.160 ms
-  Save          : 0.632 ms
+  Load (to GPU) : 0.093 ms
+  Gaussian      : 0.081 ms
+  Laplacian     : 0.030 ms
+  Binarization  : 0.130 ms
+  Visualization : 0.364 ms
 -------------------
-  Total         : 1.200 ms
+  Total         : 0.698 ms
