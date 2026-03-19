@@ -126,7 +126,7 @@ Each image gets its **own CUDA stream**, allowing the GPU to interleave operatio
 All images are loaded into CPU pinned memory **before** the pipeline starts. This eliminates disk I/O as a bottleneck during pipeline execution, at the cost of higher memory usage. 
 
 ### 3. Double-Buffered Device Memory
-Convolution requires reading neighbor pixels while writing output. To avoid race conditions, we use two device buffers (`d_data_mono` and `d_data_mono_out`) and swap pointers after each convolution stage.
+Convolution requires reading neighbor pixels while writing output.
 
 ### 4. Deferred Image Saving
 The visualization stage prepares the overlay but does **not** write to disk. All images are saved in a batch at the end, keeping the pipeline CPU-bound work minimal. Overlapping and other operations related to this step are ran sequentially in the CPU, while the cuda streams work in the background, since I evaluated that using the GPU would have been less efficient.
