@@ -1,7 +1,7 @@
 # GPU Edge Detection Pipeline
 
 A GPU-accelerated, pipelined image processing system for edge detection and visualization using CUDA.
-The project was structured to comply as much as possible with the proposed pipelined architecture.
+The project was structured to comply as much as possible with the proposed pipelined architecture, which is NOT the most optimized version (see full_parallel branch).
 
 **Language:** C++17  
 **IDE:** Visual Studio 2022  
