@@ -1,6 +1,7 @@
 # GPU Edge Detection Pipeline
 
 A GPU-accelerated, pipelined image processing system for edge detection and visualization using CUDA.
+The project was structured to comply as much as possible with the proposed pipelined architecture.
 
 **Language:** C++17  
 **IDE:** Visual Studio 2022  
@@ -46,13 +47,13 @@ Each image is assigned its own **CUDA stream**, enabling concurrent execution of
 
 | Stage | Location | Description |
 |-------|----------|-------------|
-| **1. Pre-Load** | CPU | All images loaded into pinned memory before pipeline starts |
-| **2. Transfer** | GPU | Async HtoD transfer via CUDA stream |
+| **1. (Pre-Load)** | CPU | All images loaded into pinned memory before pipeline starts |
+| **2. Load** | GPU | Async HtoD transfer via CUDA stream |
 | **3. Gaussian Filter** | GPU | 3x3 Gaussian convolution (σ=1) for noise reduction |
 | **4. Laplacian Filter** | GPU | 3x3 Laplacian convolution for edge detection |
 | **5. Binarize** | GPU | Threshold edge response + async DtoH transfer |
 | **6. Visualize** | CPU | Create colored edge overlay on original image |
-| **7. Save** | CPU | Batch save all output images at pipeline end |
+| **7. (Save)** | CPU | Batch save all output images at pipeline end |
 
 ---
 
@@ -66,11 +67,12 @@ Each image is assigned its own **CUDA stream**, enabling concurrent execution of
 | GPU Gaussian filtering (3x3) | ✅ | Separable kernel, normalized weights |
 | GPU Laplacian edge detection | ✅ | 4-connectivity kernel |
 | GPU thresholding/binarization | ✅ | Configurable threshold value |
-| Colored edge overlay | ✅ | Edges rendered in blue on original |
+| Colored edge overlay | ✅ | Edges rendered in red on original |
 | Pipelined execution | ✅ | Per-image CUDA streams |
 | Per-stage timing | ✅ | CUDA events for GPU profiling |
 | Output images saved | ✅ | BMP format in output folder |
 | Per-image stats file | ✅ | Timing breakdown per stage |
+| GPU utilization metrics | ✅ | Nsight analysis of the executable |
 
 ### Performance Optimizations ✅
 
@@ -102,17 +104,16 @@ Each image is assigned its own **CUDA stream**, enabling concurrent execution of
 |-------------|--------|--------------|
 | Centroid detection | ❌ | Connected component analysis not implemented |
 | Object counting | ❌ | Requires centroid/blob detection |
-| GPU utilization metrics | ❌ | Would require CUPTI or Nsight integration |
-| Balanced stage timing | ⚠️ | Convolutions are faster than transfers; not artificially balanced |
+| Balanced stage timing | ⚠️ | Convolutions are faster than transfers with this current dataset, but acceptable|
 
 ### Potential Improvements Not Done
 
 | Improvement | Status | Description |
 |-------------|--------|-------------|
-| Thread pool for I/O | ❌ | Pre-load is sequential (could parallelize) |
-| Memory pool for device buffers | ❌ | Per-image cudaMalloc (could pool) |
+| Threading for I/O | ❌ | Pre-load is sequential (could parallelize) |
 | Shared memory convolution | ❌ | Using global memory (could optimize) |
-| Parallel image saving | ❌ | Sequential save at end (could parallelize) |
+| Threading image saving | ❌ | Sequential save at end (could parallelize) |
+| Unit test framework | ❌ | More granular testing, using gtest or other tools |
 
 ---
 
@@ -122,17 +123,18 @@ Each image is assigned its own **CUDA stream**, enabling concurrent execution of
 Each image gets its **own CUDA stream**, allowing the GPU to interleave operations from different images. This is critical for hiding memory transfer latency behind kernel execution.
 
 ### 2. Pre-Loading Phase
-All images are loaded into CPU pinned memory **before** the pipeline starts. This eliminates disk I/O as a bottleneck during pipeline execution, at the cost of higher memory usage.
+All images are loaded into CPU pinned memory **before** the pipeline starts. This eliminates disk I/O as a bottleneck during pipeline execution, at the cost of higher memory usage. 
 
 ### 3. Double-Buffered Device Memory
 Convolution requires reading neighbor pixels while writing output. To avoid race conditions, we use two device buffers (`d_data_mono` and `d_data_mono_out`) and swap pointers after each convolution stage.
 
 ### 4. Deferred Image Saving
-The visualization stage prepares the overlay but does **not** write to disk. All images are saved in a batch at the end, keeping the pipeline CPU-bound work minimal.
+The visualization stage prepares the overlay but does **not** write to disk. All images are saved in a batch at the end, keeping the pipeline CPU-bound work minimal. Overlapping and other operations related to this step are ran sequentially in the CPU, while the cuda streams work in the background, since I evaluated that using the GPU would have been less efficient.
 
 ### 5. Pinned Memory for Transfers
 Using `cudaHostAlloc` for host buffers enables DMA transfers that don't block the CPU and achieve higher bandwidth than pageable memory.
 
+Preloading and deferred image saving was detached from the pipeline logic as the profilation shows how expensive they are in terms of time spent. This way I were able to overlap the execution of the stages better, as also shown in the Nsight report. 
 ---
 
 ## Performance Metrics
@@ -236,4 +238,4 @@ const std::string output_folder = "...";    // Output path
 
 ## Author
 
-Edge Detection Pipeline - GPU Performance Evaluation Project
+Daniele Ferrario
